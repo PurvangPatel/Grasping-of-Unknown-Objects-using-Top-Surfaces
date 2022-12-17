@@ -1,0 +1,2 @@
+Invoking command in '/home/purvang/vbrm-dr/build/vbrm-dr': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/purvang/vbrm-dr/build/vbrm-dr -- -j9 -l9
+Invoked command in '/home/purvang/vbrm-dr/build/vbrm-dr' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/purvang/vbrm-dr/build/vbrm-dr -- -j9 -l9

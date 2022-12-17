@@ -1,0 +1,15 @@
+[0.018s] Invoking command in '/home/purvang/vbrm-dr/build/vbrm-dr': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/purvang/vbrm-dr/build/vbrm-dr -- -j9 -l9
+[0.059s] [35m[1mConsolidate compiler generated dependencies of target PointCloudProcessor[0m
+[0.095s] [ 50%] [32mBuilding CXX object CMakeFiles/PointCloudProcessor.dir/src/main.cpp.o[0m
+[7.174s] [01m[K/home/purvang/vbrm-dr/src/main.cpp:[m[K In member function ‘[01m[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr PointCloudProcessing::__BoundaryEstimation__(pcl::PointCloud<pcl::PointXYZRGB>::Ptr) const[m[K’:
+[7.174s] [01m[K/home/purvang/vbrm-dr/src/main.cpp:189:24:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZRGB, Eigen::aligned_allocator<pcl::PointXYZRGB> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[7.174s]   189 |       for(int i = 0; [01;35m[Ki < CloudPtr->points.size()[m[K; i++)
+[7.174s]       |                      [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[7.184s] [01m[K/home/purvang/vbrm-dr/src/main.cpp:193:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloudptr[m[K’ was not declared in this scope; did you mean ‘[01m[KCloudPtr[m[K’?
+[7.184s]   193 |                 cloud_boundary->emplace_back([01;31m[Kcloudptr[m[K->points[i]);
+[7.184s]       |                                              [01;31m[K^~~~~~~~[m[K
+[7.184s]       |                                              [32m[KCloudPtr[m[K
+[12.188s] gmake[2]: *** [CMakeFiles/PointCloudProcessor.dir/build.make:76: CMakeFiles/PointCloudProcessor.dir/src/main.cpp.o] Error 1
+[12.188s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/PointCloudProcessor.dir/all] Error 2
+[12.188s] gmake: *** [Makefile:146: all] Error 2
+[12.190s] Invoked command in '/home/purvang/vbrm-dr/build/vbrm-dr' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/purvang/vbrm-dr/build/vbrm-dr -- -j9 -l9

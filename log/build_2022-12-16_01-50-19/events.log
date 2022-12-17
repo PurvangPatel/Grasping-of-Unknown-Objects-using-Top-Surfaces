@@ -1,0 +1,252 @@
+[0.000000] (-) TimerEvent: {}
+[0.001344] (vbrm-dr) JobQueued: {'identifier': 'vbrm-dr', 'dependencies': OrderedDict()}
+[0.001399] (vbrm-dr) JobStarted: {'identifier': 'vbrm-dr'}
+[0.011684] (vbrm-dr) JobProgress: {'identifier': 'vbrm-dr', 'progress': 'cmake'}
+[0.014422] (vbrm-dr) JobProgress: {'identifier': 'vbrm-dr', 'progress': 'build'}
+[0.014502] (vbrm-dr) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/purvang/vbrm-dr/build/vbrm-dr', '--', '-j9', '-l9'], 'cwd': '/home/purvang/vbrm-dr/build/vbrm-dr', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'purvang'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/purvang'), ('OLDPWD', '/home/purvang'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', ''), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'purvang'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'purvang'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/purvang-VM:@/tmp/.ICE-unix/1670,unix/purvang-VM:/tmp/.ICE-unix/1670'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d0f9f8b8_9317_44cf_89dc_dcd21d12b705'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.55DZW1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.125'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/purvang/vbrm-dr/build/vbrm-dr'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.067486] (vbrm-dr) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target PointCloudProcessor\x1b[0m\n'}
+[0.098449] (-) TimerEvent: {}
+[0.104495] (vbrm-dr) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/PointCloudProcessor.dir/src/main.cpp.o\x1b[0m\n'}
+[0.198610] (-) TimerEvent: {}
+[0.298962] (-) TimerEvent: {}
+[0.399333] (-) TimerEvent: {}
+[0.499680] (-) TimerEvent: {}
+[0.600042] (-) TimerEvent: {}
+[0.700407] (-) TimerEvent: {}
+[0.800725] (-) TimerEvent: {}
+[0.901045] (-) TimerEvent: {}
+[1.001406] (-) TimerEvent: {}
+[1.102052] (-) TimerEvent: {}
+[1.202614] (-) TimerEvent: {}
+[1.303018] (-) TimerEvent: {}
+[1.403509] (-) TimerEvent: {}
+[1.504073] (-) TimerEvent: {}
+[1.604559] (-) TimerEvent: {}
+[1.704990] (-) TimerEvent: {}
+[1.805457] (-) TimerEvent: {}
+[1.906276] (-) TimerEvent: {}
+[2.006602] (-) TimerEvent: {}
+[2.106994] (-) TimerEvent: {}
+[2.207377] (-) TimerEvent: {}
+[2.307715] (-) TimerEvent: {}
+[2.408205] (-) TimerEvent: {}
+[2.508687] (-) TimerEvent: {}
+[2.608991] (-) TimerEvent: {}
+[2.709380] (-) TimerEvent: {}
+[2.809733] (-) TimerEvent: {}
+[2.910521] (-) TimerEvent: {}
+[3.010867] (-) TimerEvent: {}
+[3.111277] (-) TimerEvent: {}
+[3.211612] (-) TimerEvent: {}
+[3.311927] (-) TimerEvent: {}
+[3.412249] (-) TimerEvent: {}
+[3.512666] (-) TimerEvent: {}
+[3.613104] (-) TimerEvent: {}
+[3.713712] (-) TimerEvent: {}
+[3.814502] (-) TimerEvent: {}
+[3.914935] (-) TimerEvent: {}
+[4.015540] (-) TimerEvent: {}
+[4.115854] (-) TimerEvent: {}
+[4.216236] (-) TimerEvent: {}
+[4.316574] (-) TimerEvent: {}
+[4.416896] (-) TimerEvent: {}
+[4.517303] (-) TimerEvent: {}
+[4.617912] (-) TimerEvent: {}
+[4.718408] (-) TimerEvent: {}
+[4.818758] (-) TimerEvent: {}
+[4.919100] (-) TimerEvent: {}
+[5.019413] (-) TimerEvent: {}
+[5.119743] (-) TimerEvent: {}
+[5.220100] (-) TimerEvent: {}
+[5.320428] (-) TimerEvent: {}
+[5.421080] (-) TimerEvent: {}
+[5.521506] (-) TimerEvent: {}
+[5.622110] (-) TimerEvent: {}
+[5.722445] (-) TimerEvent: {}
+[5.822818] (-) TimerEvent: {}
+[5.923185] (-) TimerEvent: {}
+[6.023730] (-) TimerEvent: {}
+[6.124109] (-) TimerEvent: {}
+[6.224628] (-) TimerEvent: {}
+[6.324958] (-) TimerEvent: {}
+[6.425340] (-) TimerEvent: {}
+[6.525660] (-) TimerEvent: {}
+[6.626700] (-) TimerEvent: {}
+[6.726996] (-) TimerEvent: {}
+[6.827393] (-) TimerEvent: {}
+[6.927744] (-) TimerEvent: {}
+[7.028161] (-) TimerEvent: {}
+[7.128404] (-) TimerEvent: {}
+[7.228750] (-) TimerEvent: {}
+[7.329145] (-) TimerEvent: {}
+[7.429510] (-) TimerEvent: {}
+[7.530469] (-) TimerEvent: {}
+[7.630802] (-) TimerEvent: {}
+[7.731224] (-) TimerEvent: {}
+[7.831586] (-) TimerEvent: {}
+[7.932032] (-) TimerEvent: {}
+[8.032335] (-) TimerEvent: {}
+[8.132642] (-) TimerEvent: {}
+[8.233174] (-) TimerEvent: {}
+[8.333680] (-) TimerEvent: {}
+[8.434083] (-) TimerEvent: {}
+[8.534774] (-) TimerEvent: {}
+[8.635120] (-) TimerEvent: {}
+[8.735580] (-) TimerEvent: {}
+[8.835940] (-) TimerEvent: {}
+[8.936273] (-) TimerEvent: {}
+[9.037386] (-) TimerEvent: {}
+[9.138084] (-) TimerEvent: {}
+[9.238667] (-) TimerEvent: {}
+[9.339067] (-) TimerEvent: {}
+[9.439491] (-) TimerEvent: {}
+[9.539830] (-) TimerEvent: {}
+[9.640200] (-) TimerEvent: {}
+[9.740641] (-) TimerEvent: {}
+[9.840859] (-) TimerEvent: {}
+[9.941242] (-) TimerEvent: {}
+[10.041587] (-) TimerEvent: {}
+[10.142368] (-) TimerEvent: {}
+[10.242738] (-) TimerEvent: {}
+[10.343228] (-) TimerEvent: {}
+[10.443687] (-) TimerEvent: {}
+[10.544122] (-) TimerEvent: {}
+[10.644407] (-) TimerEvent: {}
+[10.744758] (-) TimerEvent: {}
+[10.845110] (-) TimerEvent: {}
+[10.945491] (-) TimerEvent: {}
+[11.046092] (-) TimerEvent: {}
+[11.146582] (-) TimerEvent: {}
+[11.246943] (-) TimerEvent: {}
+[11.347339] (-) TimerEvent: {}
+[11.447635] (-) TimerEvent: {}
+[11.547936] (-) TimerEvent: {}
+[11.648255] (-) TimerEvent: {}
+[11.748611] (-) TimerEvent: {}
+[11.849056] (-) TimerEvent: {}
+[11.949468] (-) TimerEvent: {}
+[12.050408] (-) TimerEvent: {}
+[12.150872] (-) TimerEvent: {}
+[12.251208] (-) TimerEvent: {}
+[12.351733] (-) TimerEvent: {}
+[12.452104] (-) TimerEvent: {}
+[12.552426] (-) TimerEvent: {}
+[12.652750] (-) TimerEvent: {}
+[12.753085] (-) TimerEvent: {}
+[12.853409] (-) TimerEvent: {}
+[12.954109] (-) TimerEvent: {}
+[13.054632] (-) TimerEvent: {}
+[13.154959] (-) TimerEvent: {}
+[13.255689] (-) TimerEvent: {}
+[13.356188] (-) TimerEvent: {}
+[13.456519] (-) TimerEvent: {}
+[13.556978] (-) TimerEvent: {}
+[13.657420] (-) TimerEvent: {}
+[13.758562] (-) TimerEvent: {}
+[13.858888] (-) TimerEvent: {}
+[13.959565] (-) TimerEvent: {}
+[14.059906] (-) TimerEvent: {}
+[14.160381] (-) TimerEvent: {}
+[14.260692] (-) TimerEvent: {}
+[14.360971] (-) TimerEvent: {}
+[14.461320] (-) TimerEvent: {}
+[14.561655] (-) TimerEvent: {}
+[14.662341] (-) TimerEvent: {}
+[14.762668] (-) TimerEvent: {}
+[14.863026] (-) TimerEvent: {}
+[14.963339] (-) TimerEvent: {}
+[15.063632] (-) TimerEvent: {}
+[15.163967] (-) TimerEvent: {}
+[15.264304] (-) TimerEvent: {}
+[15.365005] (-) TimerEvent: {}
+[15.465618] (-) TimerEvent: {}
+[15.566128] (-) TimerEvent: {}
+[15.666487] (-) TimerEvent: {}
+[15.766927] (-) TimerEvent: {}
+[15.867587] (-) TimerEvent: {}
+[15.970498] (-) TimerEvent: {}
+[16.070815] (-) TimerEvent: {}
+[16.171156] (-) TimerEvent: {}
+[16.271678] (-) TimerEvent: {}
+[16.372029] (-) TimerEvent: {}
+[16.472359] (-) TimerEvent: {}
+[16.572656] (-) TimerEvent: {}
+[16.672968] (-) TimerEvent: {}
+[16.773334] (-) TimerEvent: {}
+[16.873668] (-) TimerEvent: {}
+[16.974152] (-) TimerEvent: {}
+[17.074517] (-) TimerEvent: {}
+[17.174847] (-) TimerEvent: {}
+[17.275178] (-) TimerEvent: {}
+[17.375513] (-) TimerEvent: {}
+[17.475865] (-) TimerEvent: {}
+[17.576320] (-) TimerEvent: {}
+[17.676648] (-) TimerEvent: {}
+[17.776997] (-) TimerEvent: {}
+[17.827431] (vbrm-dr) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable PointCloudProcessor\x1b[0m\n'}
+[17.877238] (-) TimerEvent: {}
+[17.977672] (-) TimerEvent: {}
+[18.078289] (-) TimerEvent: {}
+[18.178636] (-) TimerEvent: {}
+[18.279294] (-) TimerEvent: {}
+[18.379870] (-) TimerEvent: {}
+[18.480372] (-) TimerEvent: {}
+[18.580877] (-) TimerEvent: {}
+[18.681415] (-) TimerEvent: {}
+[18.782225] (-) TimerEvent: {}
+[18.882721] (-) TimerEvent: {}
+[18.983163] (-) TimerEvent: {}
+[19.083649] (-) TimerEvent: {}
+[19.184071] (-) TimerEvent: {}
+[19.284487] (-) TimerEvent: {}
+[19.384892] (-) TimerEvent: {}
+[19.485450] (-) TimerEvent: {}
+[19.585893] (-) TimerEvent: {}
+[19.686346] (-) TimerEvent: {}
+[19.786792] (-) TimerEvent: {}
+[19.887249] (-) TimerEvent: {}
+[19.987677] (-) TimerEvent: {}
+[20.088126] (-) TimerEvent: {}
+[20.188634] (-) TimerEvent: {}
+[20.289148] (-) TimerEvent: {}
+[20.389659] (-) TimerEvent: {}
+[20.490447] (-) TimerEvent: {}
+[20.590850] (-) TimerEvent: {}
+[20.691335] (-) TimerEvent: {}
+[20.791736] (-) TimerEvent: {}
+[20.892155] (-) TimerEvent: {}
+[20.992581] (-) TimerEvent: {}
+[21.092968] (-) TimerEvent: {}
+[21.193315] (-) TimerEvent: {}
+[21.262036] (vbrm-dr) StdoutLine: {'line': b'[100%] Built target PointCloudProcessor\n'}
+[21.266703] (vbrm-dr) CommandEnded: {'returncode': 0}
+[21.287777] (vbrm-dr) JobProgress: {'identifier': 'vbrm-dr', 'progress': 'install'}
+[21.292110] (vbrm-dr) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/purvang/vbrm-dr/build/vbrm-dr'], 'cwd': '/home/purvang/vbrm-dr/build/vbrm-dr', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'purvang'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/purvang'), ('OLDPWD', '/home/purvang'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', ''), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'purvang'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'purvang'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/purvang-VM:@/tmp/.ICE-unix/1670,unix/purvang-VM:/tmp/.ICE-unix/1670'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d0f9f8b8_9317_44cf_89dc_dcd21d12b705'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.55DZW1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.125'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/purvang/vbrm-dr/build/vbrm-dr'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[21.293433] (-) TimerEvent: {}
+[21.294712] (vbrm-dr) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.295026] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/lib/vbrm-dr/PointCloudProcessor\n'}
+[21.299813] (vbrm-dr) StdoutLine: {'line': b'-- Set runtime path of "/home/purvang/vbrm-dr/install/vbrm-dr/lib/vbrm-dr/PointCloudProcessor" to ""\n'}
+[21.299950] (vbrm-dr) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/launch\n'}
+[21.300062] (vbrm-dr) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/launch/simulation.launch.py\n'}
+[21.300243] (vbrm-dr) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/worlds\n'}
+[21.300467] (vbrm-dr) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/worlds/simulation.world\n'}
+[21.300575] (vbrm-dr) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/urdf\n'}
+[21.300858] (vbrm-dr) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/urdf/camera.urdf\n'}
+[21.301027] (vbrm-dr) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/ament_index/resource_index/package_run_dependencies/vbrm-dr\n'}
+[21.301188] (vbrm-dr) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/ament_index/resource_index/parent_prefix_path/vbrm-dr\n'}
+[21.301286] (vbrm-dr) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/environment/ament_prefix_path.sh\n'}
+[21.301383] (vbrm-dr) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/environment/ament_prefix_path.dsv\n'}
+[21.301477] (vbrm-dr) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/environment/path.sh\n'}
+[21.302054] (vbrm-dr) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/environment/path.dsv\n'}
+[21.302356] (vbrm-dr) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/local_setup.bash\n'}
+[21.302537] (vbrm-dr) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/local_setup.sh\n'}
+[21.302783] (vbrm-dr) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/local_setup.zsh\n'}
+[21.303031] (vbrm-dr) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/local_setup.dsv\n'}
+[21.303417] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/package.dsv\n'}
+[21.303854] (vbrm-dr) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/ament_index/resource_index/packages/vbrm-dr\n'}
+[21.304142] (vbrm-dr) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/cmake/vbrm-drConfig.cmake\n'}
+[21.304369] (vbrm-dr) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/cmake/vbrm-drConfig-version.cmake\n'}
+[21.305384] (vbrm-dr) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/package.xml\n'}
+[21.305487] (vbrm-dr) CommandEnded: {'returncode': 0}
+[21.362840] (vbrm-dr) JobEnded: {'identifier': 'vbrm-dr', 'rc': 0}
+[21.363415] (-) EventReactorShutdown: {}

@@ -1,0 +1,18 @@
+[01m[K/home/purvang/vbrm-dr/src/main.cpp:[m[K In member function ‘[01m[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr PointCloudProcessing::__BoundaryEstimation__(pcl::PointCloud<pcl::PointXYZRGB>::Ptr) const[m[K’:
+[01m[K/home/purvang/vbrm-dr/src/main.cpp:189:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloudptr[m[K’ was not declared in this scope; did you mean ‘[01m[KCloudPtr[m[K’?
+  189 |       for(int i = 0; i < [01;31m[Kcloudptr[m[K->points.size(); i++)
+      |                          [01;31m[K^~~~~~~~[m[K
+      |                          [32m[KCloudPtr[m[K
+[01m[K/home/purvang/vbrm-dr/src/main.cpp:[m[K In member function ‘[01m[Kvoid PointCloudSubscriber::topic_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr) const[m[K’:
+[01m[K/home/purvang/vbrm-dr/src/main.cpp:430:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud_proj[m[K’ was not declared in this scope
+  430 |       [01;31m[Kcloud_proj[m[K = pointCloudProcessor.__ProjectInliers__(objCloudFlattend, cluster_coefficients);
+      |       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/purvang/vbrm-dr/src/main.cpp:433:46:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud_projected[m[K’
+  433 |       pcl::PointCloud<pcl::PointXYZRGB>::Ptr [01;31m[Kcloud_projected[m[K (new pcl::PointCloud<pcl::PointXYZRGB>);
+      |                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/purvang/vbrm-dr/src/main.cpp:405:46:[m[K [01;36m[Knote: [m[K‘[01m[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud_projected[m[K’ previously declared here
+  405 |       pcl::PointCloud<pcl::PointXYZRGB>::Ptr [01;36m[Kcloud_projected[m[K (new pcl::PointCloud<pcl::PointXYZRGB>);
+      |                                              [01;36m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/PointCloudProcessor.dir/build.make:76: CMakeFiles/PointCloudProcessor.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/PointCloudProcessor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

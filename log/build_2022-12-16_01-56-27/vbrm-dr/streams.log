@@ -1,0 +1,32 @@
+[0.036s] Invoking command in '/home/purvang/vbrm-dr/build/vbrm-dr': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/purvang/vbrm-dr/build/vbrm-dr -- -j9 -l9
+[0.121s] [35m[1mConsolidate compiler generated dependencies of target PointCloudProcessor[0m
+[0.191s] [ 50%] [32mBuilding CXX object CMakeFiles/PointCloudProcessor.dir/src/main.cpp.o[0m
+[30.231s] [100%] [32m[1mLinking CXX executable PointCloudProcessor[0m
+[37.279s] [100%] Built target PointCloudProcessor
+[37.287s] Invoked command in '/home/purvang/vbrm-dr/build/vbrm-dr' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/purvang/vbrm-dr/build/vbrm-dr -- -j9 -l9
+[37.339s] Invoking command in '/home/purvang/vbrm-dr/build/vbrm-dr': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/purvang/vbrm-dr/build/vbrm-dr
+[37.347s] -- Install configuration: ""
+[37.348s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/lib/vbrm-dr/PointCloudProcessor
+[37.358s] -- Set runtime path of "/home/purvang/vbrm-dr/install/vbrm-dr/lib/vbrm-dr/PointCloudProcessor" to ""
+[37.358s] -- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/launch
+[37.358s] -- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/launch/simulation.launch.py
+[37.358s] -- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/worlds
+[37.358s] -- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/worlds/simulation.world
+[37.358s] -- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/urdf
+[37.359s] -- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/urdf/camera.urdf
+[37.359s] -- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/ament_index/resource_index/package_run_dependencies/vbrm-dr
+[37.359s] -- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/ament_index/resource_index/parent_prefix_path/vbrm-dr
+[37.359s] -- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/environment/ament_prefix_path.sh
+[37.359s] -- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/environment/ament_prefix_path.dsv
+[37.360s] -- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/environment/path.sh
+[37.360s] -- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/environment/path.dsv
+[37.360s] -- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/local_setup.bash
+[37.360s] -- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/local_setup.sh
+[37.360s] -- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/local_setup.zsh
+[37.360s] -- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/local_setup.dsv
+[37.361s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/package.dsv
+[37.361s] -- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/ament_index/resource_index/packages/vbrm-dr
+[37.367s] -- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/cmake/vbrm-drConfig.cmake
+[37.367s] -- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/cmake/vbrm-drConfig-version.cmake
+[37.367s] -- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/package.xml
+[37.369s] Invoked command in '/home/purvang/vbrm-dr/build/vbrm-dr' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/purvang/vbrm-dr/build/vbrm-dr

@@ -1,0 +1,4 @@
+Invoking command in '/home/purvang/vbrm-dr/build/vbrm-dr': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/purvang/vbrm-dr/build/vbrm-dr -- -j9 -l9
+Invoked command in '/home/purvang/vbrm-dr/build/vbrm-dr' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/purvang/vbrm-dr/build/vbrm-dr -- -j9 -l9
+Invoking command in '/home/purvang/vbrm-dr/build/vbrm-dr': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/purvang/vbrm-dr/build/vbrm-dr
+Invoked command in '/home/purvang/vbrm-dr/build/vbrm-dr' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/purvang/vbrm-dr/build/vbrm-dr

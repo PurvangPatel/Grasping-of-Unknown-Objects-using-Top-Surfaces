@@ -1,0 +1,36 @@
+[0.019s] Invoking command in '/home/purvang/vbrm-dr/build/vbrm-dr': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/purvang/vbrm-dr/build/vbrm-dr -- -j9 -l9
+[0.065s] [35m[1mConsolidate compiler generated dependencies of target PointCloudProcessor[0m
+[0.101s] [ 50%] [32mBuilding CXX object CMakeFiles/PointCloudProcessor.dir/src/main.cpp.o[0m
+[7.184s] [01m[K/home/purvang/vbrm-dr/src/main.cpp:[m[K In member function ‘[01m[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr PointCloudProcessing::__BoundaryEstimation__(pcl::PointCloud<pcl::PointXYZRGB>::Ptr) const[m[K’:
+[7.185s] [01m[K/home/purvang/vbrm-dr/src/main.cpp:189:24:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<pcl::PointXYZRGB, Eigen::aligned_allocator<pcl::PointXYZRGB> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[7.185s]   189 |       for(int i = 0; [01;35m[Ki < CloudPtr->points.size()[m[K; i++)
+[7.185s]       |                      [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[18.603s] [100%] [32m[1mLinking CXX executable PointCloudProcessor[0m
+[22.480s] [100%] Built target PointCloudProcessor
+[22.485s] Invoked command in '/home/purvang/vbrm-dr/build/vbrm-dr' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/purvang/vbrm-dr/build/vbrm-dr -- -j9 -l9
+[22.510s] Invoking command in '/home/purvang/vbrm-dr/build/vbrm-dr': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/purvang/vbrm-dr/build/vbrm-dr
+[22.514s] -- Install configuration: ""
+[22.514s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/lib/vbrm-dr/PointCloudProcessor
+[22.523s] -- Set runtime path of "/home/purvang/vbrm-dr/install/vbrm-dr/lib/vbrm-dr/PointCloudProcessor" to ""
+[22.523s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/launch
+[22.524s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/launch/simulation.launch.py
+[22.524s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/worlds
+[22.524s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/worlds/simulation.world
+[22.524s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/urdf
+[22.524s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/urdf/camera.urdf
+[22.525s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/ament_index/resource_index/package_run_dependencies/vbrm-dr
+[22.525s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/ament_index/resource_index/parent_prefix_path/vbrm-dr
+[22.525s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/environment/ament_prefix_path.sh
+[22.526s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/environment/ament_prefix_path.dsv
+[22.526s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/environment/path.sh
+[22.526s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/environment/path.dsv
+[22.526s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/local_setup.bash
+[22.527s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/local_setup.sh
+[22.527s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/local_setup.zsh
+[22.527s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/local_setup.dsv
+[22.527s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/package.dsv
+[22.527s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/ament_index/resource_index/packages/vbrm-dr
+[22.528s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/cmake/vbrm-drConfig.cmake
+[22.528s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/cmake/vbrm-drConfig-version.cmake
+[22.528s] -- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/package.xml
+[22.529s] Invoked command in '/home/purvang/vbrm-dr/build/vbrm-dr' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/purvang/vbrm-dr/build/vbrm-dr

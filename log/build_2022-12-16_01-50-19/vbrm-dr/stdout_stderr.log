@@ -1,0 +1,28 @@
+[35m[1mConsolidate compiler generated dependencies of target PointCloudProcessor[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/PointCloudProcessor.dir/src/main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable PointCloudProcessor[0m
+[100%] Built target PointCloudProcessor
+-- Install configuration: ""
+-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/lib/vbrm-dr/PointCloudProcessor
+-- Set runtime path of "/home/purvang/vbrm-dr/install/vbrm-dr/lib/vbrm-dr/PointCloudProcessor" to ""
+-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/launch
+-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/launch/simulation.launch.py
+-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/worlds
+-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/worlds/simulation.world
+-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/urdf
+-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/urdf/camera.urdf
+-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/ament_index/resource_index/package_run_dependencies/vbrm-dr
+-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/ament_index/resource_index/parent_prefix_path/vbrm-dr
+-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/environment/ament_prefix_path.sh
+-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/environment/path.sh
+-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/environment/path.dsv
+-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/local_setup.bash
+-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/local_setup.sh
+-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/local_setup.zsh
+-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/local_setup.dsv
+-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/package.dsv
+-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/ament_index/resource_index/packages/vbrm-dr
+-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/cmake/vbrm-drConfig.cmake
+-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/cmake/vbrm-drConfig-version.cmake
+-- Up-to-date: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/package.xml

@@ -1,0 +1,47 @@
+[0.020s] Invoking command in '/home/purvang/vbrm-dr/build/vbrm-dr': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/purvang/vbrm-dr/build/vbrm-dr -- -j9 -l9
+[0.067s] [35m[1mConsolidate compiler generated dependencies of target PointCloudProcessor[0m
+[0.104s] [ 50%] [32mBuilding CXX object CMakeFiles/PointCloudProcessor.dir/src/main.cpp.o[0m
+[7.038s] [01m[K/home/purvang/vbrm-dr/src/main.cpp:[m[K In member function ‘[01m[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr PointCloudProcessing::__BoundaryEstimation__(pcl::PointCloud<pcl::PointXYZRGB>::Ptr) const[m[K’:
+[7.038s] [01m[K/home/purvang/vbrm-dr/src/main.cpp:173:25:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr[m[K’ {aka ‘[01m[Kstd::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >[m[K’} to ‘[01m[Kconst PointCloudConstPtr&[m[K’ {aka ‘[01m[Kconst std::shared_ptr<const pcl::PointCloud<pcl::PointXYZ> >&[m[K’}
+[7.038s]   173 |       ne.setInputCloud ([01;31m[KCloudPtr[m[K);
+[7.038s]       |                         [01;31m[K^~~~~~~~[m[K
+[7.038s]       |                         [01;31m[K|[m[K
+[7.038s]       |                         [01;31m[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr {aka std::shared_ptr<pcl::PointCloud<pcl::PointXYZRGB> >}[m[K
+[7.038s] In file included from [01m[K/home/purvang/vbrm-dr/src/main.cpp:27[m[K:
+[7.038s] [01m[K/usr/include/pcl-1.12/pcl/features/normal_3d.h:332:48:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid pcl::NormalEstimation<PointInT, PointOutT>::setInputCloud(const PointCloudConstPtr&) [with PointInT = pcl::PointXYZ; PointOutT = pcl::Normal; pcl::NormalEstimation<PointInT, PointOutT>::PointCloudConstPtr = std::shared_ptr<const pcl::PointCloud<pcl::PointXYZ> >][m[K’
+[7.039s]   332 |       setInputCloud ([01;36m[Kconst PointCloudConstPtr &cloud[m[K) override
+[7.039s]       |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[7.057s] [01m[K/home/purvang/vbrm-dr/src/main.cpp:179:12:[m[K [01;31m[Kerror: [m[K‘[01m[KBoundaryEstimation[m[K’ is not a member of ‘[01m[Kpcl[m[K’; did you mean ‘[01m[KNormalEstimation[m[K’?
+[7.058s]   179 |       pcl::[01;31m[KBoundaryEstimation[m[K<pcl::PointXYZ, pcl::Normal, pcl::Boundary> est;
+[7.058s]       |            [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[7.058s]       |            [32m[KNormalEstimation[m[K
+[7.058s] [01m[K/home/purvang/vbrm-dr/src/main.cpp:179:44:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K,[m[K’ token
+[7.058s]   179 |       pcl::BoundaryEstimation<pcl::PointXYZ[01;31m[K,[m[K pcl::Normal, pcl::Boundary> est;
+[7.058s]       |                                            [01;31m[K^[m[K
+[7.058s] [01m[K/home/purvang/vbrm-dr/src/main.cpp:179:57:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K,[m[K’ token
+[7.058s]   179 |       pcl::BoundaryEstimation<pcl::PointXYZ, pcl::Normal[01;31m[K,[m[K pcl::Boundary> est;
+[7.059s]       |                                                         [01;31m[K^[m[K
+[7.059s] [01m[K/home/purvang/vbrm-dr/src/main.cpp:179:72:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[7.059s]   179 |       pcl::BoundaryEstimation<pcl::PointXYZ, pcl::Normal, pcl::Boundary[01;31m[K>[m[K est;
+[7.059s]       |                                                                        [01;31m[K^[m[K
+[7.069s] [01m[K/home/purvang/vbrm-dr/src/main.cpp:179:74:[m[K [01;31m[Kerror: [m[K‘[01m[Kest[m[K’ was not declared in this scope
+[7.069s]   179 |       pcl::BoundaryEstimation<pcl::PointXYZ, pcl::Normal, pcl::Boundary> [01;31m[Kest[m[K;
+[7.069s]       |                                                                          [01;31m[K^~~[m[K
+[7.080s] [01m[K/home/purvang/vbrm-dr/src/main.cpp:188:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloudptr[m[K’ was not declared in this scope; did you mean ‘[01m[KCloudPtr[m[K’?
+[7.080s]   188 |       for(int i = 0; i < [01;31m[Kcloudptr[m[K->points.size(); i++)
+[7.080s]       |                          [01;31m[K^~~~~~~~[m[K
+[7.080s]       |                          [32m[KCloudPtr[m[K
+[7.215s] [01m[K/home/purvang/vbrm-dr/src/main.cpp:[m[K In member function ‘[01m[Kvoid PointCloudSubscriber::topic_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr) const[m[K’:
+[7.215s] [01m[K/home/purvang/vbrm-dr/src/main.cpp:429:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kcloud_proj[m[K’ was not declared in this scope
+[7.215s]   429 |       [01;31m[Kcloud_proj[m[K = pointCloudProcessor.__ProjectInliers__(objCloudFlattend, cluster_coefficients);
+[7.215s]       |       [01;31m[K^~~~~~~~~~[m[K
+[7.216s] [01m[K/home/purvang/vbrm-dr/src/main.cpp:432:46:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud_projected[m[K’
+[7.216s]   432 |       pcl::PointCloud<pcl::PointXYZRGB>::Ptr [01;31m[Kcloud_projected[m[K (new pcl::PointCloud<pcl::PointXYZRGB>);
+[7.216s]       |                                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[7.216s] [01m[K/home/purvang/vbrm-dr/src/main.cpp:404:46:[m[K [01;36m[Knote: [m[K‘[01m[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud_projected[m[K’ previously declared here
+[7.216s]   404 |       pcl::PointCloud<pcl::PointXYZRGB>::Ptr [01;36m[Kcloud_projected[m[K (new pcl::PointCloud<pcl::PointXYZRGB>);
+[7.216s]       |                                              [01;36m[K^~~~~~~~~~~~~~~[m[K
+[13.134s] gmake[2]: *** [CMakeFiles/PointCloudProcessor.dir/build.make:76: CMakeFiles/PointCloudProcessor.dir/src/main.cpp.o] Error 1
+[13.134s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/PointCloudProcessor.dir/all] Error 2
+[13.134s] gmake: *** [Makefile:146: all] Error 2
+[13.136s] Invoked command in '/home/purvang/vbrm-dr/build/vbrm-dr' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/purvang/vbrm-dr/build/vbrm-dr -- -j9 -l9

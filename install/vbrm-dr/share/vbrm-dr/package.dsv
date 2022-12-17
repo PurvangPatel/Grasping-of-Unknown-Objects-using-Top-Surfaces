@@ -1,0 +1,8 @@
+source;share/vbrm-dr/hook/cmake_prefix_path.ps1
+source;share/vbrm-dr/hook/cmake_prefix_path.dsv
+source;share/vbrm-dr/hook/cmake_prefix_path.sh
+source;share/vbrm-dr/local_setup.bash
+source;share/vbrm-dr/local_setup.dsv
+source;share/vbrm-dr/local_setup.ps1
+source;share/vbrm-dr/local_setup.sh
+source;share/vbrm-dr/local_setup.zsh

@@ -1,0 +1,4 @@
+source;share/vbrm-dr/local_setup.bash
+source;share/vbrm-dr/local_setup.dsv
+source;share/vbrm-dr/local_setup.sh
+source;share/vbrm-dr/local_setup.zsh

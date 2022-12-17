@@ -1,0 +1,268 @@
+[0.000000] (-) TimerEvent: {}
+[0.001748] (vbrm-dr) JobQueued: {'identifier': 'vbrm-dr', 'dependencies': OrderedDict()}
+[0.001828] (vbrm-dr) JobStarted: {'identifier': 'vbrm-dr'}
+[0.013628] (vbrm-dr) JobProgress: {'identifier': 'vbrm-dr', 'progress': 'cmake'}
+[0.015477] (vbrm-dr) JobProgress: {'identifier': 'vbrm-dr', 'progress': 'build'}
+[0.015580] (vbrm-dr) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/purvang/vbrm-dr/build/vbrm-dr', '--', '-j9', '-l9'], 'cwd': '/home/purvang/vbrm-dr/build/vbrm-dr', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'purvang'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/purvang'), ('OLDPWD', '/home/purvang'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', ''), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'purvang'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'purvang'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/purvang-VM:@/tmp/.ICE-unix/1670,unix/purvang-VM:/tmp/.ICE-unix/1670'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d0f9f8b8_9317_44cf_89dc_dcd21d12b705'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.55DZW1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.125'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/purvang/vbrm-dr/build/vbrm-dr'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.067066] (vbrm-dr) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target PointCloudProcessor\x1b[0m\n'}
+[0.099872] (-) TimerEvent: {}
+[0.102534] (vbrm-dr) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/PointCloudProcessor.dir/src/main.cpp.o\x1b[0m\n'}
+[0.200464] (-) TimerEvent: {}
+[0.301071] (-) TimerEvent: {}
+[0.401487] (-) TimerEvent: {}
+[0.502011] (-) TimerEvent: {}
+[0.602542] (-) TimerEvent: {}
+[0.703059] (-) TimerEvent: {}
+[0.803392] (-) TimerEvent: {}
+[0.904325] (-) TimerEvent: {}
+[1.004680] (-) TimerEvent: {}
+[1.105167] (-) TimerEvent: {}
+[1.205639] (-) TimerEvent: {}
+[1.306159] (-) TimerEvent: {}
+[1.406715] (-) TimerEvent: {}
+[1.507453] (-) TimerEvent: {}
+[1.608041] (-) TimerEvent: {}
+[1.708677] (-) TimerEvent: {}
+[1.809550] (-) TimerEvent: {}
+[1.910553] (-) TimerEvent: {}
+[2.011036] (-) TimerEvent: {}
+[2.112038] (-) TimerEvent: {}
+[2.212365] (-) TimerEvent: {}
+[2.312681] (-) TimerEvent: {}
+[2.413293] (-) TimerEvent: {}
+[2.514112] (-) TimerEvent: {}
+[2.614811] (-) TimerEvent: {}
+[2.716000] (-) TimerEvent: {}
+[2.816360] (-) TimerEvent: {}
+[2.916685] (-) TimerEvent: {}
+[3.017025] (-) TimerEvent: {}
+[3.117328] (-) TimerEvent: {}
+[3.217934] (-) TimerEvent: {}
+[3.318455] (-) TimerEvent: {}
+[3.418986] (-) TimerEvent: {}
+[3.519508] (-) TimerEvent: {}
+[3.619932] (-) TimerEvent: {}
+[3.720544] (-) TimerEvent: {}
+[3.821008] (-) TimerEvent: {}
+[3.921583] (-) TimerEvent: {}
+[4.022112] (-) TimerEvent: {}
+[4.122515] (-) TimerEvent: {}
+[4.222985] (-) TimerEvent: {}
+[4.323890] (-) TimerEvent: {}
+[4.424522] (-) TimerEvent: {}
+[4.524955] (-) TimerEvent: {}
+[4.625510] (-) TimerEvent: {}
+[4.725933] (-) TimerEvent: {}
+[4.826911] (-) TimerEvent: {}
+[4.927464] (-) TimerEvent: {}
+[5.027851] (-) TimerEvent: {}
+[5.128128] (-) TimerEvent: {}
+[5.228598] (-) TimerEvent: {}
+[5.329186] (-) TimerEvent: {}
+[5.429633] (-) TimerEvent: {}
+[5.530225] (-) TimerEvent: {}
+[5.630987] (-) TimerEvent: {}
+[5.731260] (-) TimerEvent: {}
+[5.831817] (-) TimerEvent: {}
+[5.932371] (-) TimerEvent: {}
+[6.032848] (-) TimerEvent: {}
+[6.133322] (-) TimerEvent: {}
+[6.233905] (-) TimerEvent: {}
+[6.334503] (-) TimerEvent: {}
+[6.434946] (-) TimerEvent: {}
+[6.535670] (-) TimerEvent: {}
+[6.636352] (-) TimerEvent: {}
+[6.736829] (-) TimerEvent: {}
+[6.837231] (-) TimerEvent: {}
+[6.937754] (-) TimerEvent: {}
+[7.038114] (-) TimerEvent: {}
+[7.138576] (-) TimerEvent: {}
+[7.186067] (vbrm-dr) StderrLine: {'line': b'\x1b[01m\x1b[K/home/purvang/vbrm-dr/src/main.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr PointCloudProcessing::__BoundaryEstimation__(pcl::PointCloud<pcl::PointXYZRGB>::Ptr) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.186351] (vbrm-dr) StderrLine: {'line': b'\x1b[01m\x1b[K/home/purvang/vbrm-dr/src/main.cpp:189:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<pcl::PointXYZRGB, Eigen::aligned_allocator<pcl::PointXYZRGB> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.186459] (vbrm-dr) StderrLine: {'line': b'  189 |       for(int i = 0; \x1b[01;35m\x1b[Ki < CloudPtr->points.size()\x1b[m\x1b[K; i++)\n'}
+[7.186545] (vbrm-dr) StderrLine: {'line': b'      |                      \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.238778] (-) TimerEvent: {}
+[7.339251] (-) TimerEvent: {}
+[7.439589] (-) TimerEvent: {}
+[7.540181] (-) TimerEvent: {}
+[7.640688] (-) TimerEvent: {}
+[7.740894] (-) TimerEvent: {}
+[7.841497] (-) TimerEvent: {}
+[7.942118] (-) TimerEvent: {}
+[8.042453] (-) TimerEvent: {}
+[8.143029] (-) TimerEvent: {}
+[8.243383] (-) TimerEvent: {}
+[8.343789] (-) TimerEvent: {}
+[8.444362] (-) TimerEvent: {}
+[8.544752] (-) TimerEvent: {}
+[8.645238] (-) TimerEvent: {}
+[8.745800] (-) TimerEvent: {}
+[8.846241] (-) TimerEvent: {}
+[8.946562] (-) TimerEvent: {}
+[9.047015] (-) TimerEvent: {}
+[9.147679] (-) TimerEvent: {}
+[9.248427] (-) TimerEvent: {}
+[9.348758] (-) TimerEvent: {}
+[9.449492] (-) TimerEvent: {}
+[9.550264] (-) TimerEvent: {}
+[9.651512] (-) TimerEvent: {}
+[9.752018] (-) TimerEvent: {}
+[9.852359] (-) TimerEvent: {}
+[9.953000] (-) TimerEvent: {}
+[10.053453] (-) TimerEvent: {}
+[10.154214] (-) TimerEvent: {}
+[10.254967] (-) TimerEvent: {}
+[10.355314] (-) TimerEvent: {}
+[10.455646] (-) TimerEvent: {}
+[10.556242] (-) TimerEvent: {}
+[10.656836] (-) TimerEvent: {}
+[10.757181] (-) TimerEvent: {}
+[10.857775] (-) TimerEvent: {}
+[10.958297] (-) TimerEvent: {}
+[11.058808] (-) TimerEvent: {}
+[11.159473] (-) TimerEvent: {}
+[11.259737] (-) TimerEvent: {}
+[11.360181] (-) TimerEvent: {}
+[11.460707] (-) TimerEvent: {}
+[11.561042] (-) TimerEvent: {}
+[11.661568] (-) TimerEvent: {}
+[11.761899] (-) TimerEvent: {}
+[11.862180] (-) TimerEvent: {}
+[11.962436] (-) TimerEvent: {}
+[12.062905] (-) TimerEvent: {}
+[12.163313] (-) TimerEvent: {}
+[12.263717] (-) TimerEvent: {}
+[12.364299] (-) TimerEvent: {}
+[12.464688] (-) TimerEvent: {}
+[12.565044] (-) TimerEvent: {}
+[12.665716] (-) TimerEvent: {}
+[12.767438] (-) TimerEvent: {}
+[12.867733] (-) TimerEvent: {}
+[12.968170] (-) TimerEvent: {}
+[13.068947] (-) TimerEvent: {}
+[13.169352] (-) TimerEvent: {}
+[13.269832] (-) TimerEvent: {}
+[13.370326] (-) TimerEvent: {}
+[13.470807] (-) TimerEvent: {}
+[13.571405] (-) TimerEvent: {}
+[13.673023] (-) TimerEvent: {}
+[13.773295] (-) TimerEvent: {}
+[13.876062] (-) TimerEvent: {}
+[13.976444] (-) TimerEvent: {}
+[14.076703] (-) TimerEvent: {}
+[14.177067] (-) TimerEvent: {}
+[14.277503] (-) TimerEvent: {}
+[14.377799] (-) TimerEvent: {}
+[14.478265] (-) TimerEvent: {}
+[14.578827] (-) TimerEvent: {}
+[14.679120] (-) TimerEvent: {}
+[14.779732] (-) TimerEvent: {}
+[14.880351] (-) TimerEvent: {}
+[14.980674] (-) TimerEvent: {}
+[15.081001] (-) TimerEvent: {}
+[15.181954] (-) TimerEvent: {}
+[15.282879] (-) TimerEvent: {}
+[15.383310] (-) TimerEvent: {}
+[15.483929] (-) TimerEvent: {}
+[15.584314] (-) TimerEvent: {}
+[15.684592] (-) TimerEvent: {}
+[15.785258] (-) TimerEvent: {}
+[15.886015] (-) TimerEvent: {}
+[15.986385] (-) TimerEvent: {}
+[16.086924] (-) TimerEvent: {}
+[16.187433] (-) TimerEvent: {}
+[16.287775] (-) TimerEvent: {}
+[16.388540] (-) TimerEvent: {}
+[16.488835] (-) TimerEvent: {}
+[16.591223] (-) TimerEvent: {}
+[16.691688] (-) TimerEvent: {}
+[16.792012] (-) TimerEvent: {}
+[16.892498] (-) TimerEvent: {}
+[16.992803] (-) TimerEvent: {}
+[17.093363] (-) TimerEvent: {}
+[17.194247] (-) TimerEvent: {}
+[17.295018] (-) TimerEvent: {}
+[17.395666] (-) TimerEvent: {}
+[17.496113] (-) TimerEvent: {}
+[17.596623] (-) TimerEvent: {}
+[17.697197] (-) TimerEvent: {}
+[17.797662] (-) TimerEvent: {}
+[17.898241] (-) TimerEvent: {}
+[17.998610] (-) TimerEvent: {}
+[18.099270] (-) TimerEvent: {}
+[18.199880] (-) TimerEvent: {}
+[18.300497] (-) TimerEvent: {}
+[18.401043] (-) TimerEvent: {}
+[18.501597] (-) TimerEvent: {}
+[18.601982] (-) TimerEvent: {}
+[18.605169] (vbrm-dr) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable PointCloudProcessor\x1b[0m\n'}
+[18.702325] (-) TimerEvent: {}
+[18.803296] (-) TimerEvent: {}
+[18.903798] (-) TimerEvent: {}
+[19.004306] (-) TimerEvent: {}
+[19.104654] (-) TimerEvent: {}
+[19.205176] (-) TimerEvent: {}
+[19.305703] (-) TimerEvent: {}
+[19.406393] (-) TimerEvent: {}
+[19.507083] (-) TimerEvent: {}
+[19.607897] (-) TimerEvent: {}
+[19.708957] (-) TimerEvent: {}
+[19.810074] (-) TimerEvent: {}
+[19.911069] (-) TimerEvent: {}
+[20.011405] (-) TimerEvent: {}
+[20.111951] (-) TimerEvent: {}
+[20.212592] (-) TimerEvent: {}
+[20.313458] (-) TimerEvent: {}
+[20.413856] (-) TimerEvent: {}
+[20.514311] (-) TimerEvent: {}
+[20.614795] (-) TimerEvent: {}
+[20.715249] (-) TimerEvent: {}
+[20.816301] (-) TimerEvent: {}
+[20.916942] (-) TimerEvent: {}
+[21.017391] (-) TimerEvent: {}
+[21.117972] (-) TimerEvent: {}
+[21.218618] (-) TimerEvent: {}
+[21.319447] (-) TimerEvent: {}
+[21.419776] (-) TimerEvent: {}
+[21.520734] (-) TimerEvent: {}
+[21.621608] (-) TimerEvent: {}
+[21.722604] (-) TimerEvent: {}
+[21.823157] (-) TimerEvent: {}
+[21.923990] (-) TimerEvent: {}
+[22.024338] (-) TimerEvent: {}
+[22.124742] (-) TimerEvent: {}
+[22.225375] (-) TimerEvent: {}
+[22.326028] (-) TimerEvent: {}
+[22.426470] (-) TimerEvent: {}
+[22.481887] (vbrm-dr) StdoutLine: {'line': b'[100%] Built target PointCloudProcessor\n'}
+[22.486878] (vbrm-dr) CommandEnded: {'returncode': 0}
+[22.507286] (vbrm-dr) JobProgress: {'identifier': 'vbrm-dr', 'progress': 'install'}
+[22.511624] (vbrm-dr) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/purvang/vbrm-dr/build/vbrm-dr'], 'cwd': '/home/purvang/vbrm-dr/build/vbrm-dr', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'purvang'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/purvang'), ('OLDPWD', '/home/purvang'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', ''), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'purvang'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'purvang'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/purvang-VM:@/tmp/.ICE-unix/1670,unix/purvang-VM:/tmp/.ICE-unix/1670'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d0f9f8b8_9317_44cf_89dc_dcd21d12b705'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.55DZW1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.125'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/purvang/vbrm-dr/build/vbrm-dr'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[22.515515] (vbrm-dr) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.516040] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/lib/vbrm-dr/PointCloudProcessor\n'}
+[22.524308] (vbrm-dr) StdoutLine: {'line': b'-- Set runtime path of "/home/purvang/vbrm-dr/install/vbrm-dr/lib/vbrm-dr/PointCloudProcessor" to ""\n'}
+[22.525136] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/launch\n'}
+[22.525379] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/launch/simulation.launch.py\n'}
+[22.525606] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/worlds\n'}
+[22.525894] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/worlds/simulation.world\n'}
+[22.526070] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/urdf\n'}
+[22.526236] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/urdf/camera.urdf\n'}
+[22.526345] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/ament_index/resource_index/package_run_dependencies/vbrm-dr\n'}
+[22.526492] (-) TimerEvent: {}
+[22.526702] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/ament_index/resource_index/parent_prefix_path/vbrm-dr\n'}
+[22.526855] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/environment/ament_prefix_path.sh\n'}
+[22.527463] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/environment/ament_prefix_path.dsv\n'}
+[22.527628] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/environment/path.sh\n'}
+[22.527833] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/environment/path.dsv\n'}
+[22.528107] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/local_setup.bash\n'}
+[22.528307] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/local_setup.sh\n'}
+[22.528471] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/local_setup.zsh\n'}
+[22.528797] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/local_setup.dsv\n'}
+[22.529096] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/package.dsv\n'}
+[22.529260] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/ament_index/resource_index/packages/vbrm-dr\n'}
+[22.529550] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/cmake/vbrm-drConfig.cmake\n'}
+[22.529734] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/cmake/vbrm-drConfig-version.cmake\n'}
+[22.529891] (vbrm-dr) StdoutLine: {'line': b'-- Installing: /home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/package.xml\n'}
+[22.530893] (vbrm-dr) CommandEnded: {'returncode': 0}
+[22.598643] (vbrm-dr) JobEnded: {'identifier': 'vbrm-dr', 'rc': 0}
+[22.599802] (-) EventReactorShutdown: {}

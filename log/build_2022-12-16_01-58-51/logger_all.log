@@ -1,0 +1,103 @@
+[0.406s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.406s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=9, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fc19247b490>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fc192e2b190>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fc192e2b190>>)
+[0.432s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.432s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.432s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.433s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.433s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.433s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.433s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/purvang/vbrm-dr'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.458s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'vbrm-dr'
+[0.458s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.458s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.458s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.458s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.458s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.491s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.492s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.496s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 306 installed packages in /opt/ros/humble
+[0.499s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.594s] Level 5:colcon.colcon_core.verb:set package 'vbrm-dr' build argument 'cmake_args' from command line to 'None'
+[0.594s] Level 5:colcon.colcon_core.verb:set package 'vbrm-dr' build argument 'cmake_target' from command line to 'None'
+[0.594s] Level 5:colcon.colcon_core.verb:set package 'vbrm-dr' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.594s] Level 5:colcon.colcon_core.verb:set package 'vbrm-dr' build argument 'cmake_clean_cache' from command line to 'False'
+[0.594s] Level 5:colcon.colcon_core.verb:set package 'vbrm-dr' build argument 'cmake_clean_first' from command line to 'False'
+[0.594s] Level 5:colcon.colcon_core.verb:set package 'vbrm-dr' build argument 'cmake_force_configure' from command line to 'False'
+[0.594s] Level 5:colcon.colcon_core.verb:set package 'vbrm-dr' build argument 'ament_cmake_args' from command line to 'None'
+[0.595s] Level 5:colcon.colcon_core.verb:set package 'vbrm-dr' build argument 'catkin_cmake_args' from command line to 'None'
+[0.595s] Level 5:colcon.colcon_core.verb:set package 'vbrm-dr' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.595s] DEBUG:colcon.colcon_core.verb:Building package 'vbrm-dr' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/purvang/vbrm-dr/build/vbrm-dr', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/purvang/vbrm-dr/install/vbrm-dr', 'merge_install': False, 'path': '/home/purvang/vbrm-dr', 'symlink_install': False, 'test_result_base': None}
+[0.596s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.601s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.601s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/purvang/vbrm-dr' with build type 'ament_cmake'
+[0.601s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/purvang/vbrm-dr'
+[0.606s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.607s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.607s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.620s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/purvang/vbrm-dr/build/vbrm-dr': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/purvang/vbrm-dr/build/vbrm-dr -- -j9 -l9
+[21.579s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/purvang/vbrm-dr/build/vbrm-dr' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/purvang/vbrm-dr/build/vbrm-dr -- -j9 -l9
+[21.606s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/purvang/vbrm-dr/build/vbrm-dr': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/purvang/vbrm-dr/build/vbrm-dr
+[21.619s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vbrm-dr)
+[21.619s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/purvang/vbrm-dr/build/vbrm-dr' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/purvang/vbrm-dr/build/vbrm-dr
+[21.626s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/vbrm-dr/install/vbrm-dr' for CMake module files
+[21.626s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/vbrm-dr/install/vbrm-dr' for CMake config files
+[21.627s] Level 1:colcon.colcon_core.shell:create_environment_hook('vbrm-dr', 'cmake_prefix_path')
+[21.629s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/hook/cmake_prefix_path.ps1'
+[21.629s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/hook/cmake_prefix_path.dsv'
+[21.630s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/hook/cmake_prefix_path.sh'
+[21.631s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/vbrm-dr/install/vbrm-dr/lib'
+[21.631s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/vbrm-dr/install/vbrm-dr/bin'
+[21.631s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/vbrm-dr/install/vbrm-dr/lib/pkgconfig/vbrm-dr.pc'
+[21.632s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/vbrm-dr/install/vbrm-dr/lib/python3.10/site-packages'
+[21.632s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/vbrm-dr/install/vbrm-dr/bin'
+[21.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/package.ps1'
+[21.635s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/package.dsv'
+[21.636s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/package.sh'
+[21.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/package.bash'
+[21.638s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/package.zsh'
+[21.639s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/purvang/vbrm-dr/install/vbrm-dr/share/colcon-core/packages/vbrm-dr)
+[21.664s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vbrm-dr)
+[21.667s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/vbrm-dr/install/vbrm-dr' for CMake module files
+[21.668s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/vbrm-dr/install/vbrm-dr' for CMake config files
+[21.668s] Level 1:colcon.colcon_core.shell:create_environment_hook('vbrm-dr', 'cmake_prefix_path')
+[21.670s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/hook/cmake_prefix_path.ps1'
+[21.670s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/hook/cmake_prefix_path.dsv'
+[21.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/hook/cmake_prefix_path.sh'
+[21.672s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/vbrm-dr/install/vbrm-dr/lib'
+[21.672s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/vbrm-dr/install/vbrm-dr/bin'
+[21.672s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/vbrm-dr/install/vbrm-dr/lib/pkgconfig/vbrm-dr.pc'
+[21.672s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/vbrm-dr/install/vbrm-dr/lib/python3.10/site-packages'
+[21.673s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/vbrm-dr/install/vbrm-dr/bin'
+[21.675s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/package.ps1'
+[21.675s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/package.dsv'
+[21.676s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/package.sh'
+[21.676s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/package.bash'
+[21.677s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvang/vbrm-dr/install/vbrm-dr/share/vbrm-dr/package.zsh'
+[21.677s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/purvang/vbrm-dr/install/vbrm-dr/share/colcon-core/packages/vbrm-dr)
+[21.678s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[21.678s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[21.678s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[21.679s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[21.685s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[21.686s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[21.686s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[21.700s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[21.702s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/purvang/vbrm-dr/install/local_setup.ps1'
+[21.704s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/purvang/vbrm-dr/install/_local_setup_util_ps1.py'
+[21.712s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/purvang/vbrm-dr/install/setup.ps1'
+[21.716s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/purvang/vbrm-dr/install/local_setup.sh'
+[21.717s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/purvang/vbrm-dr/install/_local_setup_util_sh.py'
+[21.717s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/purvang/vbrm-dr/install/setup.sh'
+[21.721s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/purvang/vbrm-dr/install/local_setup.bash'
+[21.722s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/purvang/vbrm-dr/install/setup.bash'
+[21.724s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/purvang/vbrm-dr/install/local_setup.zsh'
+[21.725s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/purvang/vbrm-dr/install/setup.zsh'

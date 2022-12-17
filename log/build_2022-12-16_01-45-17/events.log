@@ -1,0 +1,166 @@
+[0.000000] (-) TimerEvent: {}
+[0.001028] (vbrm-dr) JobQueued: {'identifier': 'vbrm-dr', 'dependencies': OrderedDict()}
+[0.001134] (vbrm-dr) JobStarted: {'identifier': 'vbrm-dr'}
+[0.012406] (vbrm-dr) JobProgress: {'identifier': 'vbrm-dr', 'progress': 'cmake'}
+[0.015864] (vbrm-dr) JobProgress: {'identifier': 'vbrm-dr', 'progress': 'build'}
+[0.015979] (vbrm-dr) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/purvang/vbrm-dr/build/vbrm-dr', '--', '-j9', '-l9'], 'cwd': '/home/purvang/vbrm-dr/build/vbrm-dr', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'purvang'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/purvang'), ('OLDPWD', '/home/purvang'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', ''), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1698'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'purvang'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'purvang'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/purvang-VM:@/tmp/.ICE-unix/1670,unix/purvang-VM:/tmp/.ICE-unix/1670'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d0f9f8b8_9317_44cf_89dc_dcd21d12b705'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.55DZW1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.125'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/purvang/vbrm-dr/build/vbrm-dr'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.071763] (vbrm-dr) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target PointCloudProcessor\x1b[0m\n'}
+[0.099613] (-) TimerEvent: {}
+[0.115691] (vbrm-dr) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/PointCloudProcessor.dir/src/main.cpp.o\x1b[0m\n'}
+[0.199961] (-) TimerEvent: {}
+[0.300647] (-) TimerEvent: {}
+[0.401065] (-) TimerEvent: {}
+[0.502156] (-) TimerEvent: {}
+[0.602497] (-) TimerEvent: {}
+[0.702912] (-) TimerEvent: {}
+[0.803167] (-) TimerEvent: {}
+[0.903525] (-) TimerEvent: {}
+[1.003923] (-) TimerEvent: {}
+[1.104604] (-) TimerEvent: {}
+[1.205659] (-) TimerEvent: {}
+[1.306344] (-) TimerEvent: {}
+[1.407002] (-) TimerEvent: {}
+[1.507355] (-) TimerEvent: {}
+[1.608140] (-) TimerEvent: {}
+[1.708734] (-) TimerEvent: {}
+[1.809702] (-) TimerEvent: {}
+[1.910593] (-) TimerEvent: {}
+[2.010927] (-) TimerEvent: {}
+[2.111462] (-) TimerEvent: {}
+[2.212099] (-) TimerEvent: {}
+[2.312579] (-) TimerEvent: {}
+[2.412849] (-) TimerEvent: {}
+[2.513663] (-) TimerEvent: {}
+[2.614068] (-) TimerEvent: {}
+[2.715025] (-) TimerEvent: {}
+[2.815518] (-) TimerEvent: {}
+[2.916072] (-) TimerEvent: {}
+[3.016430] (-) TimerEvent: {}
+[3.116820] (-) TimerEvent: {}
+[3.217642] (-) TimerEvent: {}
+[3.318154] (-) TimerEvent: {}
+[3.418681] (-) TimerEvent: {}
+[3.519060] (-) TimerEvent: {}
+[3.619515] (-) TimerEvent: {}
+[3.719963] (-) TimerEvent: {}
+[3.820713] (-) TimerEvent: {}
+[3.921158] (-) TimerEvent: {}
+[4.021827] (-) TimerEvent: {}
+[4.122373] (-) TimerEvent: {}
+[4.222840] (-) TimerEvent: {}
+[4.323340] (-) TimerEvent: {}
+[4.423684] (-) TimerEvent: {}
+[4.524460] (-) TimerEvent: {}
+[4.624903] (-) TimerEvent: {}
+[4.725445] (-) TimerEvent: {}
+[4.825942] (-) TimerEvent: {}
+[4.926619] (-) TimerEvent: {}
+[5.027189] (-) TimerEvent: {}
+[5.127598] (-) TimerEvent: {}
+[5.228428] (-) TimerEvent: {}
+[5.328875] (-) TimerEvent: {}
+[5.429404] (-) TimerEvent: {}
+[5.529937] (-) TimerEvent: {}
+[5.630374] (-) TimerEvent: {}
+[5.730970] (-) TimerEvent: {}
+[5.831482] (-) TimerEvent: {}
+[5.931937] (-) TimerEvent: {}
+[6.032301] (-) TimerEvent: {}
+[6.132712] (-) TimerEvent: {}
+[6.233266] (-) TimerEvent: {}
+[6.333645] (-) TimerEvent: {}
+[6.434043] (-) TimerEvent: {}
+[6.534675] (-) TimerEvent: {}
+[6.635153] (-) TimerEvent: {}
+[6.735777] (-) TimerEvent: {}
+[6.836163] (-) TimerEvent: {}
+[6.937021] (-) TimerEvent: {}
+[7.037871] (-) TimerEvent: {}
+[7.087284] (vbrm-dr) StderrLine: {'line': b'\x1b[01m\x1b[K/home/purvang/vbrm-dr/src/main.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr PointCloudProcessing::__BoundaryEstimation__(pcl::PointCloud<pcl::PointXYZRGB>::Ptr) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.087531] (vbrm-dr) StderrLine: {'line': b'\x1b[01m\x1b[K/home/purvang/vbrm-dr/src/main.cpp:179:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KBoundaryEstimation\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kpcl\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KNormalEstimation\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.087648] (vbrm-dr) StderrLine: {'line': b'  179 |       pcl::\x1b[01;31m\x1b[KBoundaryEstimation\x1b[m\x1b[K<pcl::PointXYZRGB, pcl::Normal, pcl::Boundary> est;\n'}
+[7.087756] (vbrm-dr) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.087861] (vbrm-dr) StderrLine: {'line': b'      |            \x1b[32m\x1b[KNormalEstimation\x1b[m\x1b[K\n'}
+[7.087957] (vbrm-dr) StderrLine: {'line': b'\x1b[01m\x1b[K/home/purvang/vbrm-dr/src/main.cpp:179:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.088064] (vbrm-dr) StderrLine: {'line': b'  179 |       pcl::BoundaryEstimation<pcl::PointXYZRGB\x1b[01;31m\x1b[K,\x1b[m\x1b[K pcl::Normal, pcl::Boundary> est;\n'}
+[7.088166] (vbrm-dr) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.088262] (vbrm-dr) StderrLine: {'line': b'\x1b[01m\x1b[K/home/purvang/vbrm-dr/src/main.cpp:179:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.088365] (vbrm-dr) StderrLine: {'line': b'  179 |       pcl::BoundaryEstimation<pcl::PointXYZRGB, pcl::Normal\x1b[01;31m\x1b[K,\x1b[m\x1b[K pcl::Boundary> est;\n'}
+[7.088468] (vbrm-dr) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.088564] (vbrm-dr) StderrLine: {'line': b'\x1b[01m\x1b[K/home/purvang/vbrm-dr/src/main.cpp:179:75:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[7.089237] (vbrm-dr) StderrLine: {'line': b'  179 |       pcl::BoundaryEstimation<pcl::PointXYZRGB, pcl::Normal, pcl::Boundary\x1b[01;31m\x1b[K>\x1b[m\x1b[K est;\n'}
+[7.089381] (vbrm-dr) StderrLine: {'line': b'      |                                                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[7.097469] (vbrm-dr) StderrLine: {'line': b'\x1b[01m\x1b[K/home/purvang/vbrm-dr/src/main.cpp:179:77:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kest\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.097691] (vbrm-dr) StderrLine: {'line': b'  179 |       pcl::BoundaryEstimation<pcl::PointXYZRGB, pcl::Normal, pcl::Boundary> \x1b[01;31m\x1b[Kest\x1b[m\x1b[K;\n'}
+[7.097793] (vbrm-dr) StderrLine: {'line': b'      |                                                                             \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.107061] (vbrm-dr) StderrLine: {'line': b'\x1b[01m\x1b[K/home/purvang/vbrm-dr/src/main.cpp:188:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcloudptr\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KCloudPtr\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[7.107253] (vbrm-dr) StderrLine: {'line': b'  188 |       for(int i = 0; i < \x1b[01;31m\x1b[Kcloudptr\x1b[m\x1b[K->points.size(); i++)\n'}
+[7.107387] (vbrm-dr) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[7.107490] (vbrm-dr) StderrLine: {'line': b'      |                          \x1b[32m\x1b[KCloudPtr\x1b[m\x1b[K\n'}
+[7.138234] (-) TimerEvent: {}
+[7.226180] (vbrm-dr) StderrLine: {'line': b'\x1b[01m\x1b[K/home/purvang/vbrm-dr/src/main.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PointCloudSubscriber::topic_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.226496] (vbrm-dr) StderrLine: {'line': b'\x1b[01m\x1b[K/home/purvang/vbrm-dr/src/main.cpp:429:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcloud_proj\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[7.226585] (vbrm-dr) StderrLine: {'line': b'  429 |       \x1b[01;31m\x1b[Kcloud_proj\x1b[m\x1b[K = pointCloudProcessor.__ProjectInliers__(objCloudFlattend, cluster_coefficients);\n'}
+[7.226651] (vbrm-dr) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.226724] (vbrm-dr) StderrLine: {'line': b'\x1b[01m\x1b[K/home/purvang/vbrm-dr/src/main.cpp:432:46:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kredeclaration of \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud_projected\x1b[m\x1b[K\xe2\x80\x99\n'}
+[7.226778] (vbrm-dr) StderrLine: {'line': b'  432 |       pcl::PointCloud<pcl::PointXYZRGB>::Ptr \x1b[01;31m\x1b[Kcloud_projected\x1b[m\x1b[K (new pcl::PointCloud<pcl::PointXYZRGB>);\n'}
+[7.226829] (vbrm-dr) StderrLine: {'line': b'      |                                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.226880] (vbrm-dr) StderrLine: {'line': b'\x1b[01m\x1b[K/home/purvang/vbrm-dr/src/main.cpp:404:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud_projected\x1b[m\x1b[K\xe2\x80\x99 previously declared here\n'}
+[7.226932] (vbrm-dr) StderrLine: {'line': b'  404 |       pcl::PointCloud<pcl::PointXYZRGB>::Ptr \x1b[01;36m\x1b[Kcloud_projected\x1b[m\x1b[K (new pcl::PointCloud<pcl::PointXYZRGB>);\n'}
+[7.226987] (vbrm-dr) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.238493] (-) TimerEvent: {}
+[7.338786] (-) TimerEvent: {}
+[7.439185] (-) TimerEvent: {}
+[7.539986] (-) TimerEvent: {}
+[7.640275] (-) TimerEvent: {}
+[7.740781] (-) TimerEvent: {}
+[7.841197] (-) TimerEvent: {}
+[7.941563] (-) TimerEvent: {}
+[8.042388] (-) TimerEvent: {}
+[8.142954] (-) TimerEvent: {}
+[8.243500] (-) TimerEvent: {}
+[8.343810] (-) TimerEvent: {}
+[8.444448] (-) TimerEvent: {}
+[8.544741] (-) TimerEvent: {}
+[8.645203] (-) TimerEvent: {}
+[8.745524] (-) TimerEvent: {}
+[8.846273] (-) TimerEvent: {}
+[8.946848] (-) TimerEvent: {}
+[9.047711] (-) TimerEvent: {}
+[9.148097] (-) TimerEvent: {}
+[9.248486] (-) TimerEvent: {}
+[9.348842] (-) TimerEvent: {}
+[9.449325] (-) TimerEvent: {}
+[9.550129] (-) TimerEvent: {}
+[9.650879] (-) TimerEvent: {}
+[9.751591] (-) TimerEvent: {}
+[9.851900] (-) TimerEvent: {}
+[9.952282] (-) TimerEvent: {}
+[10.053247] (-) TimerEvent: {}
+[10.153618] (-) TimerEvent: {}
+[10.254147] (-) TimerEvent: {}
+[10.354662] (-) TimerEvent: {}
+[10.455211] (-) TimerEvent: {}
+[10.555731] (-) TimerEvent: {}
+[10.656435] (-) TimerEvent: {}
+[10.756858] (-) TimerEvent: {}
+[10.857400] (-) TimerEvent: {}
+[10.957996] (-) TimerEvent: {}
+[11.058828] (-) TimerEvent: {}
+[11.159173] (-) TimerEvent: {}
+[11.259707] (-) TimerEvent: {}
+[11.360437] (-) TimerEvent: {}
+[11.461343] (-) TimerEvent: {}
+[11.562187] (-) TimerEvent: {}
+[11.662610] (-) TimerEvent: {}
+[11.763299] (-) TimerEvent: {}
+[11.863819] (-) TimerEvent: {}
+[11.964705] (-) TimerEvent: {}
+[12.065265] (-) TimerEvent: {}
+[12.165732] (-) TimerEvent: {}
+[12.193730] (vbrm-dr) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/PointCloudProcessor.dir/build.make:76: CMakeFiles/PointCloudProcessor.dir/src/main.cpp.o] Error 1\n'}
+[12.194184] (vbrm-dr) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/PointCloudProcessor.dir/all] Error 2\n'}
+[12.194450] (vbrm-dr) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[12.196277] (vbrm-dr) CommandEnded: {'returncode': 2}
+[12.237534] (vbrm-dr) JobEnded: {'identifier': 'vbrm-dr', 'rc': 2}
+[12.249553] (-) EventReactorShutdown: {}
