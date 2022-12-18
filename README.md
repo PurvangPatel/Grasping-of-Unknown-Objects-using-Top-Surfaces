@@ -39,7 +39,7 @@ sudo apt-get install -y pcl-tools
 
 Clone the ROS2 package in your local folder. Make sure to source the setup.bash
 
-Open <workspace>/src/Grasping-of-Unknown-Objects-using-Top-Surfaces/src/main.cpp -> Change line number --- to the directory where you want to save the processed point cloud data.
+Open <workspace>/src/Grasping-of-Unknown-Objects-using-Top-Surfaces/src/main.cpp -> Change the line number 196 to /<workspace>/Grasping-of-Unknown-Objects-using-Top-Surfaces/Media/
 
 Open a terminal and run:
 
@@ -58,7 +58,7 @@ ros2 launch Grasping-of-Unknown-Objects-using-Top-Surfaces simulation.launch.py
 ros2 run Grasping-of-Unknown-Objects-using-Top-Surfaces PointCloudProcessor 
 ```
 
-#ROS2 Workspace Structure
+# ROS2 Workspace Structure
 
 **Media**
   
@@ -66,7 +66,10 @@ Contains all the PCDs files including the point cloud data received from the sim
 
 **Algorithms/Cavity_Detection**
   
-The cavity detection algorithm approach - Follow the below build instructions 
+To run the cavity detection algorithm approach - Perform the below minor read & write path change and follow the build instructions. 
+
+```
+Change directory in line numbers 225-237 to: /<workspace>/Grasping-of-Unknown-Objects-using-Top-Surfaces/Algorithms/Cavity_Detection/Media/<filename>.pcd
 ```
 cd <workspace>/src/Grasping-of-Unknown-Objects-using-Top-Surfaces/Algorithms/Cavity_Detection
 ```
