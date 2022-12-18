@@ -61,9 +61,11 @@ ros2 run Grasping-of-Unknown-Objects-using-Top-Surfaces PointCloudProcessor
 #ROS2 Workspace Structure
 
 **Media**
+  
 Contains all the PCDs files including the point cloud data received from the simulator, clustered objects, estimnated boundaries and grasp points.
 
 **Algorithms/Cavity_Detection**
+  
 The cavity detection algorithm approach - Follow the below build instructions 
 ```
 cd <workspace>/src/Grasping-of-Unknown-Objects-using-Top-Surfaces/Algorithms/Cavity_Detection
@@ -86,9 +88,10 @@ cmake ../
 ```
 
 ```
-make -j16 (-j<number of preferred core>)
+make -j16 
 ```
-
+(note: -j<number of preferred core>)
 
 **rviz2**
+  
 When the simulation and Point cloud processor are running, you may want to run this visualization file to see all the objects with their respective grasp points.
