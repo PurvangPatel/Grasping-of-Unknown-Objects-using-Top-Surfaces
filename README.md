@@ -39,22 +39,59 @@ sudo apt-get install -y pcl-tools
 
 Clone the ROS2 package in your local folder. Make sure to source the setup.bash
 
-Open <WORKSPACE>/vbm_project_env/src/main.cpp -> Change line number --- to the directory where you want to save the processed point cloud data.
+Open <workspace>/src/Grasping-of-Unknown-Objects-using-Top-Surfaces/src/main.cpp -> Change line number --- to the directory where you want to save the processed point cloud data.
 
 Open a terminal and run:
 
 **Build the ROS2 Package**
 ``` 
-colcon build --packages-select vbrm-dr
+colcon build --packages-select Grasping-of-Unknown-Objects-using-Top-surfaces
 ```
 
 **Launch the enviornment**
 ```
-ros2 launch vbrm-dr simulation.launch.py
+ros2 launch Grasping-of-Unknown-Objects-using-Top-Surfaces simulation.launch.py
 ```
 
 **Run the ROS2 Node to process the data**
 ```
-ros2 run vbrm-dr PointCloudProcessor 
+ros2 run Grasping-of-Unknown-Objects-using-Top-Surfaces PointCloudProcessor 
 ```
 
+#ROS2 Workspace Structure
+
+**Media**
+  
+Contains all the PCDs files including the point cloud data received from the simulator, clustered objects, estimnated boundaries and grasp points.
+
+**Algorithms/Cavity_Detection**
+  
+The cavity detection algorithm approach - Follow the below build instructions 
+```
+cd <workspace>/src/Grasping-of-Unknown-Objects-using-Top-Surfaces/Algorithms/Cavity_Detection
+```
+
+```
+rm -rf build
+```
+
+```
+mkdir -p build
+```
+
+```
+cd build
+```
+
+```
+cmake ../
+```
+
+```
+make -j16 
+```
+(note: -j<number of preferred core>)
+
+**rviz2**
+  
+When the simulation and Point cloud processor are running, you may want to run this visualization file to see all the objects with their respective grasp points.
