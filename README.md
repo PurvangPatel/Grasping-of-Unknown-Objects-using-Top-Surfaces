@@ -70,8 +70,8 @@ Contains all the PCDs files including the point cloud data received from the sim
   
 To run the cavity detection algorithm approach - Perform the below minor read & write path change and follow the build instructions. 
 
-```
 Change directory in line numbers 225-237 to: /<workspace>/Grasping-of-Unknown-Objects-using-Top-Surfaces/Algorithms/Cavity_Detection/Media/<filename>.pcd
+
 ```
 cd <workspace>/src/Grasping-of-Unknown-Objects-using-Top-Surfaces/Algorithms/Cavity_Detection
 ```
