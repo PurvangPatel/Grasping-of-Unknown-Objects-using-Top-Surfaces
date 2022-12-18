@@ -135,7 +135,7 @@ class PointCloudProcessing
       pcl::ModelCoefficients::Ptr coeff (new pcl::ModelCoefficients ());
       coeff->values.resize (4);
       coeff->values[0] = coeff->values[1] = 0;
-      coeff->values[2] = -1.0;
+      coeff->values[2] = 1.0;
       coeff->values[3] = 0;
 
       pcl::ProjectInliers<pcl::PointXYZRGB> project;
@@ -192,13 +192,16 @@ class FileManagement
       writer.write(path, *CloudPtr, false); 
     }
   private:
-    std::string dir = "/home/purvang/vbrm-dr/Media/" ;
+  // CAUTION: CHANGE THE DIRECTORY
+  std::string dir = "/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/Media/" ;
 };
 
 class GraspQualityMatrix
 {
   public:
-    void __CloundCentre__(pcl::PointCloud<pcl::PointXYZRGB>::Ptr CloudPtr)const
+
+    /********** Heuristic based Grasp Quality Metric *************/
+    Eigen::Matrix< float, 4, 1 > __CloundCentre__(pcl::PointCloud<pcl::PointXYZRGB>::Ptr CloudPtr)const
     {
       Eigen::Matrix< float, 4, 1 > centroid;
       pcl::PointXYZRGB centroidpoint;
@@ -209,6 +212,7 @@ class GraspQualityMatrix
       centroidpoint.z = centroid[2];
 
       CloudPtr->push_back(centroidpoint);
+      return centroid;
     }
 
     pcl::PointCloud<pcl::PointXYZRGB>::Ptr __FindGrasp__(pcl::PointCloud<pcl::PointXYZRGB>::Ptr CloudPtr)const
@@ -265,9 +269,156 @@ class GraspQualityMatrix
 
       return grasp_points;
     }   
+    
+    /********** Geometric based Grasp Quality Metric *************/
+
+    // Collinearty check function
+    bool isCollinear(const Eigen::Vector3f& vec1, const Eigen::Vector3f& vec2, double eps = 0.1) const
+    {
+      // Normalize the functions before calculation dot product
+      const auto& vec1_norm = vec1.normalized();
+      const auto& vec2_norm = vec2.normalized();
+
+      // derived dot product
+      auto dot_product_val = vec1_norm.dot(vec2_norm);
+
+      // making sure that dot product value is around -1 (angle as 180)
+      //  since there can be numerical accuracies not giving us perfect -1
+      if ((-1 - eps <= dot_product_val) && (dot_product_val <= -1 + eps))
+      {
+        return true;
+      } 
+      return false;
+    }
+    
+    /* Function to calculate the best grasp contact pairs in the segmented point cloud */
+    pcl::PointCloud<pcl::PointXYZRGB>::Ptr
+      getBestGraspContactPair(const Eigen::Matrix3Xf& normals, 
+                              const Eigen::Matrix3Xf& contact_points, 
+                              const Eigen::Vector3f& centroid,
+                              pcl::PointCloud<pcl::PointXYZRGB>::Ptr CloudPtr
+                              ) const
+    { 
+      
+      // Initialize the containers to store the contact pairs
+      std::vector<std::pair<Eigen::Vector3f,Eigen::Vector3f>> cp_pairs;
+
+      // ideal best grasp angle value
+      double best_grasp_angles = 0;
+
+      // define angle threshold
+      float angle_threshold_degree = 1;
+      float angle_threshold = angle_threshold_degree * (M_PI / 180);
+
+      // Matrix of Vectors between contact points and centroid
+      auto CX0 = contact_points.colwise() - centroid;
+      int index_point1;
+      int index_point2;
+      float min_dis = __FLT_MAX__;
+
+      /* Check against all the contact points iteratively */
+      double best_angle_clearance = 10;
+      for (long int i=0; i < normals.cols(); i++)
+      {
+        // 1st contact point that is considered
+        const auto& C1 = contact_points(all, i);
+
+        // 1st contact point normal
+        const auto& C1N = normals(all, i);
+
+        // vector between 1st contact point and centroid
+        const auto& C10 = CX0(all, i);
+
+        for (long int j=0; j<normals.cols(); j++)
+        {
+          // exclude comparing between same contact points
+          if (i==j)
+          {
+            continue;
+          }
+
+          // 2nd contact point that is considered
+          const auto& C2 = contact_points(all, j);
+
+          // vector between 2nd contact point and centroid
+          const auto& C20 = CX0(all, j);
+
+          // check if vectors between (1st contact point and centroid) and (2nd contact point and centroid) are collinear
+
+          auto is_collinear = isCollinear(C10,C20);
+
+          // if they are collinear check if they satisfy the necessary force vector grasp formulation
+          if (is_collinear==1) //Used instead of isCollinear because we are not considering the collinearity of contact points with the centroid to calculate the best grasp 
+          {
+
+            // 1st contact point normal
+            const auto& C2N = normals(all, j);
+            auto C1C2 = (C1-C2).normalized();
+
+            // calculate angles between contact points and corresponding normals
+            auto angle1 = acos(C1N.dot(C1C2));
+            auto angle2 = acos(C2N.dot(C1C2));
+            double grasp_angle = angle1 + angle2;
+
+            // Check if corresponding grasp angle is falling within the threshold
+            if(M_PI - angle_threshold < grasp_angle && grasp_angle < M_PI + angle_threshold)
+            {
+               // Check if the corresponding grasp angle is better than previous candidate grasp angles
+              //  if (grasp_angle >= best_grasp_angle) //correction: can we use |grasp_angle - M_PI|<best_angle_clearance instead of the current statement for getting 180deg instead of 190deg
+              if(std::abs(grasp_angle - M_PI)<=best_angle_clearance) //If the grasp_angle is the closest to 180 degrees angle, then we add it to our grasp_point_cloud
+               { 
+                  float dist_x1 = centroid[0] - C1(0);
+                  float dist_y1 = centroid[1] - C1(1);
+                  float dist_z1 = centroid[2] - C1(2);
+
+                  float dist_x2 = centroid[0] - C2(0);
+                  float dist_y2 = centroid[1] - C2(1);
+                  float dist_z2 = centroid[2] - C2(2);
+
+                  float dis_point1= sqrt(dist_x1*dist_x1 + dist_y1*dist_y1 + dist_z1*dist_z1);
+                  float dis_point2= sqrt(dist_x2*dist_x2 + dist_y2*dist_y2 + dist_z2*dist_z2);
+
+                  float dis = dis_point1+ dis_point2;
+                  if(dis < min_dis)
+                  {
+                    std::cout << "Geometric - Point 1: " << C1(0) << "," <<C1(1) <<"," << C1(2)<< std::endl;
+                    std::cout << "Geometric - Point 2: " << C2(0) << "," <<C2(1) <<"," << C2(2)<< std::endl;
+                    cp_pairs.push_back({C1, C2});
+                    best_angle_clearance = std::abs(grasp_angle - M_PI); //the best difference from 180 degrees is updated so that it will be used for the next set of contact points 
+                    best_grasp_angles = grasp_angle; //best grasp angle is updated
+                    min_dis = dis;
+                    index_point1 = i;
+                    index_point2 = j;
 
 
-    //To-Do: @Anoushka - You can add the GQM function here in this place and use them in the main using the same class instance.
+                  }
+
+
+               }
+            }
+          }
+        }
+      }
+
+      //Create a new point cloud having two grasp points only.
+      pcl::PointCloud<pcl::PointXYZRGB>::Ptr grasp_points_1 (new pcl::PointCloud<pcl::PointXYZRGB>);
+  
+      grasp_points_1->push_back(CloudPtr->points[index_point1]);
+      grasp_points_1->push_back(CloudPtr->points[index_point2]);
+  
+      grasp_points_1->points[0].r = 0;
+      grasp_points_1->points[0].g = 255;
+      grasp_points_1->points[0].b = 0;
+  
+      grasp_points_1->points[1].r = 0;
+      grasp_points_1->points[1].g = 255;
+      grasp_points_1->points[1].b = 0;
+
+      return grasp_points_1;
+    }
+
+
+    
 };
 
 class PointCloudSubscriber : public rclcpp::Node
@@ -307,6 +458,19 @@ public:
     grasp_9 = this->create_publisher<sensor_msgs::msg::PointCloud2>("/VBRM/grasp_9", 10); 
     grasp_10 = this->create_publisher<sensor_msgs::msg::PointCloud2>("/VBRM/grasp_10", 10); 
     grasp_11 = this->create_publisher<sensor_msgs::msg::PointCloud2>("/VBRM/grasp_11", 10); 
+
+    grasp_0_G = this->create_publisher<sensor_msgs::msg::PointCloud2>("/VBRM/grasp_0_G", 10); 
+    grasp_1_G = this->create_publisher<sensor_msgs::msg::PointCloud2>("/VBRM/grasp_1_G", 10); 
+    grasp_2_G = this->create_publisher<sensor_msgs::msg::PointCloud2>("/VBRM/grasp_2_G", 10); 
+    grasp_3_G = this->create_publisher<sensor_msgs::msg::PointCloud2>("/VBRM/grasp_3_G", 10); 
+    grasp_4_G = this->create_publisher<sensor_msgs::msg::PointCloud2>("/VBRM/grasp_4_G", 10); 
+    grasp_5_G = this->create_publisher<sensor_msgs::msg::PointCloud2>("/VBRM/grasp_5_G", 10); 
+    grasp_6_G = this->create_publisher<sensor_msgs::msg::PointCloud2>("/VBRM/grasp_6_G", 10); 
+    grasp_7_G = this->create_publisher<sensor_msgs::msg::PointCloud2>("/VBRM/grasp_7_G", 10); 
+    grasp_8_G = this->create_publisher<sensor_msgs::msg::PointCloud2>("/VBRM/grasp_8_G", 10); 
+    grasp_9_G = this->create_publisher<sensor_msgs::msg::PointCloud2>("/VBRM/grasp_9_G", 10); 
+    grasp_10_G = this->create_publisher<sensor_msgs::msg::PointCloud2>("/VBRM/grasp_10_G", 10); 
+    grasp_11_G = this->create_publisher<sensor_msgs::msg::PointCloud2>("/VBRM/grasp_11_G", 10); 
   }
 
 private:
@@ -338,6 +502,19 @@ private:
   rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr grasp_9;  
   rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr grasp_10;  
   rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr grasp_11; 
+
+  rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr grasp_0_G;  
+  rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr grasp_1_G;  
+  rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr grasp_2_G;  
+  rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr grasp_3_G;  
+  rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr grasp_4_G;  
+  rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr grasp_5_G;  
+  rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr grasp_6_G;  
+  rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr grasp_7_G;  
+  rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr grasp_8_G;  
+  rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr grasp_9_G;  
+  rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr grasp_10_G;  
+  rclcpp::Publisher<sensor_msgs::msg::PointCloud2>::SharedPtr grasp_11_G; 
 
   PointCloudProcessing pointCloudProcessor;
   GraspQualityMatrix graspQualityMatrix;
@@ -422,15 +599,64 @@ private:
       /* Finding Centroid for each object */
       pcl::PointCloud<pcl::PointXYZRGB>::Ptr centroidCloud (new pcl::PointCloud<pcl::PointXYZRGB>);
       pcl::copyPointCloud(*estimated_boundary,*centroidCloud);
-      graspQualityMatrix.__CloundCentre__(centroidCloud);
+      const auto centroid = graspQualityMatrix.__CloundCentre__(centroidCloud);
 
       /* Finding the Closest Point from Centroid for each object */
       pcl::PointCloud<pcl::PointXYZRGB>::Ptr grasp_points (new pcl::PointCloud<pcl::PointXYZRGB>);
       grasp_points = graspQualityMatrix.__FindGrasp__(centroidCloud);
 
       /********** Geometric Appraoch ***************/
-      //To-Do: @Anoushka - I am not sure whether should we run both the appraoches and store results separately? Your call.
       
+      //Normal Estimation ( To Do: create a function)
+      
+      // Create the normal estimation class, and pass the input dataset to it
+      pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_hull (new pcl::PointCloud<pcl::PointXYZ>);
+      pcl::copyPointCloud(*estimated_boundary,*cloud_hull);
+      pcl::NormalEstimation<pcl::PointXYZ, pcl::Normal> ne;
+      ne.setInputCloud (cloud_hull);
+
+      // Create an empty KDTree representation, and pass it to the normal estimation object.
+      // Its content will be filled inside the object, based on the given input dataset (as no other search surface is given).
+      pcl::search::KdTree<pcl::PointXYZ>::Ptr tree (new pcl::search::KdTree<pcl::PointXYZ> ());
+      ne.setSearchMethod (tree);
+
+      // Output datasets
+      pcl::PointCloud<pcl::Normal>::Ptr cloud_normals (new pcl::PointCloud<pcl::Normal>);
+      
+      // Use all neighbors in a sphere of radius 3cm
+      ne.setRadiusSearch (0.03);
+      ne.useSensorOriginAsViewPoint();
+
+      // Compute the features
+      ne.compute (*cloud_normals);
+      RCLCPP_INFO_STREAM(this->get_logger(), "# of normals: " << cloud_normals->size ());
+
+      //FLIPPING NORMALS ACCORIDNG TO CENTROID
+      Eigen::Matrix3Xf normal_vector_matrix(3,cloud_normals->size());
+      Eigen::Matrix3Xf point_cloud(3,cloud_normals->size());
+      for(size_t i = 0; i < cloud_normals->size(); i++) 
+      {
+        Eigen::Vector3f normal = cloud_normals->at(i).getNormalVector4fMap().head(3);
+        //Eigen::Vector3f normal_dup = cloud_normals->at(i).getNormalVector4fMap().head(3);
+
+        
+        
+        pcl::flipNormalTowardsViewpoint(estimated_boundary->at(i), centroid[0], centroid[1], centroid[2], normal);
+        normal_vector_matrix(0,i) = normal[0];
+        normal_vector_matrix(1,i) = normal[1];
+        normal_vector_matrix(2,i) = normal[2];
+        
+
+        //const auto& pointMatrix = XYZcloud_filtered->at(i);
+        point_cloud(0,i) = estimated_boundary->points[i].x;
+        point_cloud(1,i) = estimated_boundary->points[i].y;
+        point_cloud(2,i) = estimated_boundary->points[i].z;
+      }
+
+      pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud_vis_geo (new pcl::PointCloud<pcl::PointXYZRGB>);
+      pcl::copyPointCloud(*estimated_boundary, *cloud_vis_geo);
+      const auto& grasp_points_1 =  graspQualityMatrix.getBestGraspContactPair(normal_vector_matrix,point_cloud,centroid.head(3),cloud_vis_geo);
+ 
      
 
       /************* Publish Grasp Points alogn with the object cluster ******************/
@@ -446,68 +672,89 @@ private:
       pcl_conversions::fromPCL(*publish_object, *publish_object_msg);  
       publish_object_msg->header.frame_id = "camera_link";
 
-      if(clusterID == 0)
+      //Grasp Points for Heurestic Approach
+      auto publish_grasp_msg_1 = new sensor_msgs::msg::PointCloud2 ;
+      pcl::PCLPointCloud2::Ptr publish_grasp_1(new pcl::PCLPointCloud2 ());
+      pcl::toPCLPointCloud2(*grasp_points_1, *publish_grasp_1);
+      pcl_conversions::fromPCL(*publish_grasp_1, *publish_grasp_msg_1);  
+      publish_grasp_msg_1->header.frame_id = "camera_link";
+
+
+       if(clusterID == 0)
       {
         object_0->publish(*publish_object_msg);
         grasp_0->publish(*publish_grasp_msg);
+        grasp_0_G->publish(*publish_grasp_msg_1);
       }
       else if(clusterID == 1)
       {
         object_1->publish(*publish_object_msg);
         grasp_1->publish(*publish_grasp_msg);
+        grasp_1_G->publish(*publish_grasp_msg_1);
       }
       else if(clusterID == 2)
       {
         object_2->publish(*publish_object_msg);
         grasp_2->publish(*publish_grasp_msg);
+        grasp_2_G->publish(*publish_grasp_msg_1);
       }
       else if(clusterID == 3)
       {
         object_3->publish(*publish_object_msg);
         grasp_3->publish(*publish_grasp_msg);
+        grasp_3_G->publish(*publish_grasp_msg_1);
       }
       else if(clusterID == 4)
       {
         object_4->publish(*publish_object_msg);
         grasp_4->publish(*publish_grasp_msg);
+        grasp_4_G->publish(*publish_grasp_msg_1);
       }
       else if(clusterID == 5)
       {
         object_5->publish(*publish_object_msg);
         grasp_5->publish(*publish_grasp_msg);
+        grasp_5_G->publish(*publish_grasp_msg_1);
       }
       else if(clusterID == 6)
       {
         object_6->publish(*publish_object_msg);
         grasp_6->publish(*publish_grasp_msg);
+        grasp_6_G->publish(*publish_grasp_msg_1);
       }
       else if(clusterID == 7)
       {
         object_7->publish(*publish_object_msg);
         grasp_7->publish(*publish_grasp_msg);
+        grasp_7_G->publish(*publish_grasp_msg_1);
       }
       else if(clusterID == 8)
       {
         object_8->publish(*publish_object_msg);
         grasp_8->publish(*publish_grasp_msg);
+        grasp_8_G->publish(*publish_grasp_msg_1);
       }
       else if(clusterID == 9)
       {
         object_9->publish(*publish_object_msg);
         grasp_9->publish(*publish_grasp_msg);
+        grasp_9_G->publish(*publish_grasp_msg_1);
       }
       else if(clusterID == 10)
       {
         object_10->publish(*publish_object_msg);
         grasp_10->publish(*publish_grasp_msg);
+        grasp_10_G->publish(*publish_grasp_msg_1);
       }
       else if(clusterID == 11)
       {
         object_11->publish(*publish_object_msg);
         grasp_11->publish(*publish_grasp_msg);
+        grasp_11_G->publish(*publish_grasp_msg_1);
       }
     
       clusterID++;
+  
       /************************* Save Cloud Points as .pcd files ******************/
       if(saveFlag)
       {
@@ -519,9 +766,14 @@ private:
 
         std::string heuristicGraspPointFilename = "heuristic_grasp_point_"+std::to_string(clusterID)+".pcd";
         fileManager.__SaveFile__<pcl::PointCloud<pcl::PointXYZRGB>::Ptr>(grasp_points,heuristicGraspPointFilename);
+
+        std::string GeometricGraspPointFilename = "geometric_grasp_point_"+std::to_string(clusterID)+".pcd";
+        fileManager.__SaveFile__<pcl::PointCloud<pcl::PointXYZRGB>::Ptr>(grasp_points_1,GeometricGraspPointFilename);
+   
       }
       *finalCloud += *estimated_boundary;
       *finalCloud += *grasp_points;
+      *finalCloud += *grasp_points_1;
     }
 
     if(saveFlag)
