@@ -1,0 +1,295 @@
+[0.000000] (-) TimerEvent: {}
+[0.000960] (Grasping-of-Unknown-Objects-using-Top-Surfaces) JobQueued: {'identifier': 'Grasping-of-Unknown-Objects-using-Top-Surfaces', 'dependencies': OrderedDict()}
+[0.000991] (Grasping-of-Unknown-Objects-using-Top-Surfaces) JobStarted: {'identifier': 'Grasping-of-Unknown-Objects-using-Top-Surfaces'}
+[0.014914] (Grasping-of-Unknown-Objects-using-Top-Surfaces) JobProgress: {'identifier': 'Grasping-of-Unknown-Objects-using-Top-Surfaces', 'progress': 'cmake'}
+[0.017704] (Grasping-of-Unknown-Objects-using-Top-Surfaces) JobProgress: {'identifier': 'Grasping-of-Unknown-Objects-using-Top-Surfaces', 'progress': 'build'}
+[0.017763] (Grasping-of-Unknown-Objects-using-Top-Surfaces) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces', '--', '-j9', '-l9'], 'cwd': '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'purvang'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/purvang'), ('OLDPWD', '/home/purvang'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', ''), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1652'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'purvang'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'purvang'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/purvang-VM:@/tmp/.ICE-unix/1609,unix/purvang-VM:/tmp/.ICE-unix/1609'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7ec9b5d6_ebb0_4536_b9bc_2006e27bb825'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3ZDVW1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/vbrm-dr:/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/vbrm-dr:/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces:/opt/ros/humble')]), 'shell': False}
+[0.070036] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target PointCloudProcessor\x1b[0m\n'}
+[0.099539] (-) TimerEvent: {}
+[0.107146] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/PointCloudProcessor.dir/src/main.cpp.o\x1b[0m\n'}
+[0.199756] (-) TimerEvent: {}
+[0.300430] (-) TimerEvent: {}
+[0.400795] (-) TimerEvent: {}
+[0.501058] (-) TimerEvent: {}
+[0.601428] (-) TimerEvent: {}
+[0.706875] (-) TimerEvent: {}
+[0.808255] (-) TimerEvent: {}
+[0.908734] (-) TimerEvent: {}
+[1.009225] (-) TimerEvent: {}
+[1.109792] (-) TimerEvent: {}
+[1.210483] (-) TimerEvent: {}
+[1.310765] (-) TimerEvent: {}
+[1.411271] (-) TimerEvent: {}
+[1.511784] (-) TimerEvent: {}
+[1.612209] (-) TimerEvent: {}
+[1.712772] (-) TimerEvent: {}
+[1.813395] (-) TimerEvent: {}
+[1.914080] (-) TimerEvent: {}
+[2.014642] (-) TimerEvent: {}
+[2.115128] (-) TimerEvent: {}
+[2.215964] (-) TimerEvent: {}
+[2.316390] (-) TimerEvent: {}
+[2.416986] (-) TimerEvent: {}
+[2.517294] (-) TimerEvent: {}
+[2.618042] (-) TimerEvent: {}
+[2.718522] (-) TimerEvent: {}
+[2.819124] (-) TimerEvent: {}
+[2.919972] (-) TimerEvent: {}
+[3.020687] (-) TimerEvent: {}
+[3.121131] (-) TimerEvent: {}
+[3.221400] (-) TimerEvent: {}
+[3.321929] (-) TimerEvent: {}
+[3.422425] (-) TimerEvent: {}
+[3.522899] (-) TimerEvent: {}
+[3.623507] (-) TimerEvent: {}
+[3.723982] (-) TimerEvent: {}
+[3.824474] (-) TimerEvent: {}
+[3.925362] (-) TimerEvent: {}
+[4.025779] (-) TimerEvent: {}
+[4.126163] (-) TimerEvent: {}
+[4.227027] (-) TimerEvent: {}
+[4.327449] (-) TimerEvent: {}
+[4.427935] (-) TimerEvent: {}
+[4.528510] (-) TimerEvent: {}
+[4.629227] (-) TimerEvent: {}
+[4.729722] (-) TimerEvent: {}
+[4.830796] (-) TimerEvent: {}
+[4.931328] (-) TimerEvent: {}
+[5.031788] (-) TimerEvent: {}
+[5.132206] (-) TimerEvent: {}
+[5.232832] (-) TimerEvent: {}
+[5.333221] (-) TimerEvent: {}
+[5.433572] (-) TimerEvent: {}
+[5.534090] (-) TimerEvent: {}
+[5.634322] (-) TimerEvent: {}
+[5.734780] (-) TimerEvent: {}
+[5.835347] (-) TimerEvent: {}
+[5.936111] (-) TimerEvent: {}
+[6.036482] (-) TimerEvent: {}
+[6.137045] (-) TimerEvent: {}
+[6.237753] (-) TimerEvent: {}
+[6.338504] (-) TimerEvent: {}
+[6.438823] (-) TimerEvent: {}
+[6.539190] (-) TimerEvent: {}
+[6.639555] (-) TimerEvent: {}
+[6.739931] (-) TimerEvent: {}
+[6.840574] (-) TimerEvent: {}
+[6.941246] (-) TimerEvent: {}
+[7.042046] (-) TimerEvent: {}
+[7.143103] (-) TimerEvent: {}
+[7.243541] (-) TimerEvent: {}
+[7.344754] (-) TimerEvent: {}
+[7.445892] (-) TimerEvent: {}
+[7.546542] (-) TimerEvent: {}
+[7.647086] (-) TimerEvent: {}
+[7.747665] (-) TimerEvent: {}
+[7.847972] (-) TimerEvent: {}
+[7.948527] (-) TimerEvent: {}
+[8.049253] (-) TimerEvent: {}
+[8.149570] (-) TimerEvent: {}
+[8.250092] (-) TimerEvent: {}
+[8.350379] (-) TimerEvent: {}
+[8.368502] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/src/main.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kpcl::PointCloud<pcl::PointXYZRGB>::Ptr GraspQualityMatrix::getBestGraspContactPair(const Matrix3Xf&, const Matrix3Xf&, const Vector3f&, pcl::PointCloud<pcl::PointXYZRGB>::Ptr) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[8.368706] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StderrLine: {'line': b'\x1b[01m\x1b[K/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/src/main.cpp:307:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kbest_grasp_angles\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[8.368803] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StderrLine: {'line': b'  307 |       double \x1b[01;35m\x1b[Kbest_grasp_angles\x1b[m\x1b[K = 0;\n'}
+[8.368892] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StderrLine: {'line': b'      |              \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.450673] (-) TimerEvent: {}
+[8.551110] (-) TimerEvent: {}
+[8.651515] (-) TimerEvent: {}
+[8.751888] (-) TimerEvent: {}
+[8.852255] (-) TimerEvent: {}
+[8.952618] (-) TimerEvent: {}
+[9.052919] (-) TimerEvent: {}
+[9.153714] (-) TimerEvent: {}
+[9.254240] (-) TimerEvent: {}
+[9.354877] (-) TimerEvent: {}
+[9.455349] (-) TimerEvent: {}
+[9.556841] (-) TimerEvent: {}
+[9.657421] (-) TimerEvent: {}
+[9.757971] (-) TimerEvent: {}
+[9.858494] (-) TimerEvent: {}
+[9.959024] (-) TimerEvent: {}
+[10.059564] (-) TimerEvent: {}
+[10.159880] (-) TimerEvent: {}
+[10.260440] (-) TimerEvent: {}
+[10.360983] (-) TimerEvent: {}
+[10.461853] (-) TimerEvent: {}
+[10.562219] (-) TimerEvent: {}
+[10.662699] (-) TimerEvent: {}
+[10.763258] (-) TimerEvent: {}
+[10.864480] (-) TimerEvent: {}
+[10.965313] (-) TimerEvent: {}
+[11.065854] (-) TimerEvent: {}
+[11.166215] (-) TimerEvent: {}
+[11.266872] (-) TimerEvent: {}
+[11.367408] (-) TimerEvent: {}
+[11.467976] (-) TimerEvent: {}
+[11.568462] (-) TimerEvent: {}
+[11.669125] (-) TimerEvent: {}
+[11.769685] (-) TimerEvent: {}
+[11.870109] (-) TimerEvent: {}
+[11.970741] (-) TimerEvent: {}
+[12.071197] (-) TimerEvent: {}
+[12.171745] (-) TimerEvent: {}
+[12.272247] (-) TimerEvent: {}
+[12.372805] (-) TimerEvent: {}
+[12.473336] (-) TimerEvent: {}
+[12.573808] (-) TimerEvent: {}
+[12.674256] (-) TimerEvent: {}
+[12.774936] (-) TimerEvent: {}
+[12.876125] (-) TimerEvent: {}
+[12.976867] (-) TimerEvent: {}
+[13.077369] (-) TimerEvent: {}
+[13.178071] (-) TimerEvent: {}
+[13.278549] (-) TimerEvent: {}
+[13.378989] (-) TimerEvent: {}
+[13.479584] (-) TimerEvent: {}
+[13.580166] (-) TimerEvent: {}
+[13.680665] (-) TimerEvent: {}
+[13.781179] (-) TimerEvent: {}
+[13.881760] (-) TimerEvent: {}
+[13.982231] (-) TimerEvent: {}
+[14.082758] (-) TimerEvent: {}
+[14.183278] (-) TimerEvent: {}
+[14.284156] (-) TimerEvent: {}
+[14.384551] (-) TimerEvent: {}
+[14.484939] (-) TimerEvent: {}
+[14.585436] (-) TimerEvent: {}
+[14.686080] (-) TimerEvent: {}
+[14.786813] (-) TimerEvent: {}
+[14.887384] (-) TimerEvent: {}
+[14.987838] (-) TimerEvent: {}
+[15.088227] (-) TimerEvent: {}
+[15.188933] (-) TimerEvent: {}
+[15.289438] (-) TimerEvent: {}
+[15.389950] (-) TimerEvent: {}
+[15.490556] (-) TimerEvent: {}
+[15.591098] (-) TimerEvent: {}
+[15.691574] (-) TimerEvent: {}
+[15.792172] (-) TimerEvent: {}
+[15.892589] (-) TimerEvent: {}
+[15.993064] (-) TimerEvent: {}
+[16.094189] (-) TimerEvent: {}
+[16.195187] (-) TimerEvent: {}
+[16.295636] (-) TimerEvent: {}
+[16.396477] (-) TimerEvent: {}
+[16.497783] (-) TimerEvent: {}
+[16.598240] (-) TimerEvent: {}
+[16.698689] (-) TimerEvent: {}
+[16.799332] (-) TimerEvent: {}
+[16.899762] (-) TimerEvent: {}
+[17.000202] (-) TimerEvent: {}
+[17.100694] (-) TimerEvent: {}
+[17.201056] (-) TimerEvent: {}
+[17.301489] (-) TimerEvent: {}
+[17.402492] (-) TimerEvent: {}
+[17.502966] (-) TimerEvent: {}
+[17.603513] (-) TimerEvent: {}
+[17.703842] (-) TimerEvent: {}
+[17.804962] (-) TimerEvent: {}
+[17.905557] (-) TimerEvent: {}
+[18.005937] (-) TimerEvent: {}
+[18.106342] (-) TimerEvent: {}
+[18.206708] (-) TimerEvent: {}
+[18.307548] (-) TimerEvent: {}
+[18.408678] (-) TimerEvent: {}
+[18.509327] (-) TimerEvent: {}
+[18.610233] (-) TimerEvent: {}
+[18.711643] (-) TimerEvent: {}
+[18.813869] (-) TimerEvent: {}
+[18.914494] (-) TimerEvent: {}
+[19.015880] (-) TimerEvent: {}
+[19.116403] (-) TimerEvent: {}
+[19.216748] (-) TimerEvent: {}
+[19.317552] (-) TimerEvent: {}
+[19.418299] (-) TimerEvent: {}
+[19.519016] (-) TimerEvent: {}
+[19.619617] (-) TimerEvent: {}
+[19.720651] (-) TimerEvent: {}
+[19.821980] (-) TimerEvent: {}
+[19.922942] (-) TimerEvent: {}
+[20.023775] (-) TimerEvent: {}
+[20.124892] (-) TimerEvent: {}
+[20.225935] (-) TimerEvent: {}
+[20.326467] (-) TimerEvent: {}
+[20.426827] (-) TimerEvent: {}
+[20.527239] (-) TimerEvent: {}
+[20.627675] (-) TimerEvent: {}
+[20.728161] (-) TimerEvent: {}
+[20.829014] (-) TimerEvent: {}
+[20.929674] (-) TimerEvent: {}
+[21.030238] (-) TimerEvent: {}
+[21.130878] (-) TimerEvent: {}
+[21.231226] (-) TimerEvent: {}
+[21.250702] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable PointCloudProcessor\x1b[0m\n'}
+[21.331507] (-) TimerEvent: {}
+[21.432665] (-) TimerEvent: {}
+[21.533215] (-) TimerEvent: {}
+[21.633816] (-) TimerEvent: {}
+[21.734772] (-) TimerEvent: {}
+[21.835285] (-) TimerEvent: {}
+[21.935858] (-) TimerEvent: {}
+[22.036178] (-) TimerEvent: {}
+[22.136749] (-) TimerEvent: {}
+[22.237256] (-) TimerEvent: {}
+[22.337849] (-) TimerEvent: {}
+[22.438326] (-) TimerEvent: {}
+[22.539055] (-) TimerEvent: {}
+[22.639879] (-) TimerEvent: {}
+[22.740966] (-) TimerEvent: {}
+[22.841954] (-) TimerEvent: {}
+[22.942407] (-) TimerEvent: {}
+[23.043199] (-) TimerEvent: {}
+[23.143875] (-) TimerEvent: {}
+[23.244402] (-) TimerEvent: {}
+[23.344940] (-) TimerEvent: {}
+[23.445478] (-) TimerEvent: {}
+[23.546273] (-) TimerEvent: {}
+[23.646734] (-) TimerEvent: {}
+[23.747195] (-) TimerEvent: {}
+[23.847544] (-) TimerEvent: {}
+[23.948083] (-) TimerEvent: {}
+[24.048632] (-) TimerEvent: {}
+[24.149101] (-) TimerEvent: {}
+[24.249627] (-) TimerEvent: {}
+[24.350213] (-) TimerEvent: {}
+[24.450763] (-) TimerEvent: {}
+[24.551260] (-) TimerEvent: {}
+[24.651681] (-) TimerEvent: {}
+[24.752361] (-) TimerEvent: {}
+[24.853541] (-) TimerEvent: {}
+[24.954295] (-) TimerEvent: {}
+[25.054751] (-) TimerEvent: {}
+[25.155198] (-) TimerEvent: {}
+[25.215156] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'[100%] Built target PointCloudProcessor\n'}
+[25.221505] (Grasping-of-Unknown-Objects-using-Top-Surfaces) CommandEnded: {'returncode': 0}
+[25.247157] (Grasping-of-Unknown-Objects-using-Top-Surfaces) JobProgress: {'identifier': 'Grasping-of-Unknown-Objects-using-Top-Surfaces', 'progress': 'install'}
+[25.252128] (Grasping-of-Unknown-Objects-using-Top-Surfaces) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces'], 'cwd': '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'purvang'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/purvang'), ('OLDPWD', '/home/purvang'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', ''), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1652'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'purvang'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'purvang'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/purvang-VM:@/tmp/.ICE-unix/1609,unix/purvang-VM:/tmp/.ICE-unix/1609'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7ec9b5d6_ebb0_4536_b9bc_2006e27bb825'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.3ZDVW1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/vbrm-dr:/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/vbrm-dr:/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces:/opt/ros/humble')]), 'shell': False}
+[25.255185] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[25.255333] (-) TimerEvent: {}
+[25.255621] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/lib/Grasping-of-Unknown-Objects-using-Top-Surfaces/PointCloudProcessor\n'}
+[25.263093] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/lib/Grasping-of-Unknown-Objects-using-Top-Surfaces/PointCloudProcessor" to ""\n'}
+[25.263450] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/launch\n'}
+[25.264730] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/launch/simulation.launch.py\n'}
+[25.265116] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/worlds\n'}
+[25.265347] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/worlds/simulation.world\n'}
+[25.265492] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/urdf\n'}
+[25.265659] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/urdf/camera.urdf\n'}
+[25.265763] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/ament_index/resource_index/package_run_dependencies/Grasping-of-Unknown-Objects-using-Top-Surfaces\n'}
+[25.265874] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/ament_index/resource_index/parent_prefix_path/Grasping-of-Unknown-Objects-using-Top-Surfaces\n'}
+[25.265996] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/environment/ament_prefix_path.sh\n'}
+[25.266108] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/environment/ament_prefix_path.dsv\n'}
+[25.266210] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/environment/path.sh\n'}
+[25.266309] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/environment/path.dsv\n'}
+[25.266410] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/local_setup.bash\n'}
+[25.266570] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/local_setup.sh\n'}
+[25.266675] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/local_setup.zsh\n'}
+[25.266851] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/local_setup.dsv\n'}
+[25.266984] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/package.dsv\n'}
+[25.267110] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/ament_index/resource_index/packages/Grasping-of-Unknown-Objects-using-Top-Surfaces\n'}
+[25.267223] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/cmake/Grasping-of-Unknown-Objects-using-Top-SurfacesConfig.cmake\n'}
+[25.267667] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/cmake/Grasping-of-Unknown-Objects-using-Top-SurfacesConfig-version.cmake\n'}
+[25.267798] (Grasping-of-Unknown-Objects-using-Top-Surfaces) StdoutLine: {'line': b'-- Up-to-date: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/package.xml\n'}
+[25.271444] (Grasping-of-Unknown-Objects-using-Top-Surfaces) CommandEnded: {'returncode': 0}
+[25.338900] (Grasping-of-Unknown-Objects-using-Top-Surfaces) JobEnded: {'identifier': 'Grasping-of-Unknown-Objects-using-Top-Surfaces', 'rc': 0}
+[25.339988] (-) EventReactorShutdown: {}

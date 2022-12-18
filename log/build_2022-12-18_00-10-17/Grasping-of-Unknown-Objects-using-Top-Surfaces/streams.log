@@ -1,0 +1,181 @@
+[0.018s] Invoking command in '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces -DCMAKE_INSTALL_PREFIX=/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces
+[0.247s] -- The C compiler identification is GNU 11.3.0
+[0.462s] -- The CXX compiler identification is GNU 11.3.0
+[0.488s] -- Detecting C compiler ABI info
+[0.569s] -- Detecting C compiler ABI info - done
+[0.586s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.587s] -- Detecting C compile features
+[0.588s] -- Detecting C compile features - done
+[0.595s] -- Detecting CXX compiler ABI info
+[0.684s] -- Detecting CXX compiler ABI info - done
+[0.702s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.702s] -- Detecting CXX compile features
+[0.703s] -- Detecting CXX compile features - done
+[0.715s] -- Found ament_cmake: 1.3.2 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.944s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[1.112s] -- Found rclcpp: 16.0.1 (/opt/ros/humble/share/rclcpp/cmake)
+[1.234s] -- Found rosidl_generator_c: 3.1.3 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.250s] -- Found rosidl_adapter: 3.1.3 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.276s] -- Found rosidl_generator_cpp: 3.1.3 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.316s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.369s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.525s] -- Found rmw_implementation_cmake: 6.1.0 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.533s] -- Found rmw_fastrtps_cpp: 6.2.1 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.684s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.720s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.783s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.121s] -- Found sensor_msgs: 4.2.2 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.433s] -- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)
+[2.725s] -- Checking for module 'eigen3'
+[2.737s] --   Found eigen3, version 3.4.0
+[2.776s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[2.776s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.829s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[2.851s] -- Checking for module 'flann'
+[2.867s] --   Found flann, version 1.9.1
+[2.905s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[2.905s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[2.982s] -- Looking for pthread.h
+[3.069s] -- Looking for pthread.h - found
+[3.069s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.150s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.151s] -- Found Threads: TRUE  
+[3.155s] -- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  
+[3.173s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+[3.374s] -- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") 
+[3.374s] -- Found MPI: TRUE (found version "3.1") found components: C 
+[3.381s] -- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+[3.403s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[3.442s] -- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") 
+[3.529s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[3.662s] -- Found X11: /usr/include   
+[3.663s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[3.730s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[3.731s] -- Looking for gethostbyname
+[3.793s] -- Looking for gethostbyname - found
+[3.794s] -- Looking for connect
+[3.861s] -- Looking for connect - found
+[3.861s] -- Looking for remove
+[3.924s] -- Looking for remove - found
+[3.924s] -- Looking for shmat
+[3.988s] -- Looking for shmat - found
+[3.988s] -- Looking for IceConnectionNumber in ICE
+[4.045s] -- Looking for IceConnectionNumber in ICE - found
+[4.155s] -- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") 
+[4.161s] -- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  
+[4.169s] -- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") 
+[4.173s] -- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") 
+[4.343s] -- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") 
+[4.356s] -- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  
+[4.369s] -- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") 
+[4.383s] -- Found utf8cpp: /usr/include/utf8cpp  
+[4.488s] -- Checking for module 'libusb-1.0'
+[4.502s] --   Found libusb-1.0, version 1.0.25
+[4.527s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[4.529s] -- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+[4.530s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.579s] -- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") 
+[4.579s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[4.580s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[4.854s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[4.860s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[4.867s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[5.137s] -- Found Qhull version 8.0.2
+[5.417s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[5.673s] -- looking for PCL_COMMON
+[5.678s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[5.678s] -- looking for PCL_KDTREE
+[5.680s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[5.681s] -- looking for PCL_OCTREE
+[5.682s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[5.682s] -- looking for PCL_SEARCH
+[5.684s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[5.684s] -- looking for PCL_SAMPLE_CONSENSUS
+[5.686s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[5.686s] -- looking for PCL_FILTERS
+[5.688s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[5.688s] -- looking for PCL_2D
+[5.689s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[5.689s] -- looking for PCL_GEOMETRY
+[5.690s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[5.690s] -- looking for PCL_IO
+[5.691s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[5.692s] -- looking for PCL_FEATURES
+[5.693s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[5.694s] -- looking for PCL_ML
+[5.696s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[5.696s] -- looking for PCL_SEGMENTATION
+[5.698s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[5.698s] -- looking for PCL_VISUALIZATION
+[5.700s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[5.700s] -- looking for PCL_SURFACE
+[5.702s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[5.702s] -- looking for PCL_REGISTRATION
+[5.704s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[5.704s] -- looking for PCL_KEYPOINTS
+[5.706s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[5.706s] -- looking for PCL_TRACKING
+[5.708s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[5.708s] -- looking for PCL_RECOGNITION
+[5.710s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[5.711s] -- looking for PCL_STEREO
+[5.712s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[5.712s] -- looking for PCL_APPS
+[5.714s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[5.715s] -- looking for PCL_IN_HAND_SCANNER
+[5.716s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[5.716s] -- looking for PCL_MODELER
+[5.716s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[5.716s] -- looking for PCL_POINT_CLOUD_EDITOR
+[5.726s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[5.726s] -- looking for PCL_OUTOFCORE
+[5.728s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[5.728s] -- looking for PCL_PEOPLE
+[5.730s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[5.731s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL (Required is at least version "1.10") 
+[5.846s] -- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.919s] WARNING: Package name "Grasping-of-Unknown-Objects-using-Top-Surfaces" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[6.104s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.105s] -- Configured cppcheck include dirs: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/include
+[6.105s] -- Configured cppcheck exclude dirs and/or files: 
+[6.113s] -- Added test 'flake8' to check Python code syntax and style conventions
+[6.126s] -- Added test 'lint_cmake' to check CMake code style
+[6.134s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[6.189s] -- Added test 'uncrustify' to check C / C++ code style
+[6.189s] -- Configured uncrustify additional arguments: 
+[6.197s] -- Added test 'xmllint' to check XML markup files
+[6.200s] -- Configuring done
+[6.346s] -- Generating done
+[6.351s] -- Build files have been written to: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces
+[6.371s] Invoked command in '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces -DCMAKE_INSTALL_PREFIX=/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces
+[6.373s] Invoking command in '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces -- -j9 -l9
+[6.408s] [ 50%] [32mBuilding CXX object CMakeFiles/PointCloudProcessor.dir/src/main.cpp.o[0m
+[27.379s] [100%] [32m[1mLinking CXX executable PointCloudProcessor[0m
+[30.745s] [100%] Built target PointCloudProcessor
+[30.751s] Invoked command in '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces -- -j9 -l9
+[30.775s] Invoking command in '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces
+[30.777s] -- Install configuration: ""
+[30.777s] -- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/lib/Grasping-of-Unknown-Objects-using-Top-Surfaces/PointCloudProcessor
+[30.782s] -- Set runtime path of "/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/lib/Grasping-of-Unknown-Objects-using-Top-Surfaces/PointCloudProcessor" to ""
+[30.782s] -- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/launch
+[30.782s] -- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/launch/simulation.launch.py
+[30.783s] -- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/worlds
+[30.783s] -- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/worlds/simulation.world
+[30.784s] -- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/urdf
+[30.784s] -- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/urdf/camera.urdf
+[30.785s] -- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/ament_index/resource_index/package_run_dependencies/Grasping-of-Unknown-Objects-using-Top-Surfaces
+[30.785s] -- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/ament_index/resource_index/parent_prefix_path/Grasping-of-Unknown-Objects-using-Top-Surfaces
+[30.785s] -- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/environment/ament_prefix_path.sh
+[30.785s] -- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/environment/ament_prefix_path.dsv
+[30.785s] -- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/environment/path.sh
+[30.786s] -- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/environment/path.dsv
+[30.786s] -- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/local_setup.bash
+[30.786s] -- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/local_setup.sh
+[30.786s] -- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/local_setup.zsh
+[30.787s] -- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/local_setup.dsv
+[30.787s] -- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/package.dsv
+[30.787s] -- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/ament_index/resource_index/packages/Grasping-of-Unknown-Objects-using-Top-Surfaces
+[30.787s] -- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/cmake/Grasping-of-Unknown-Objects-using-Top-SurfacesConfig.cmake
+[30.787s] -- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/cmake/Grasping-of-Unknown-Objects-using-Top-SurfacesConfig-version.cmake
+[30.787s] -- Installing: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/package.xml
+[30.790s] Invoked command in '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces

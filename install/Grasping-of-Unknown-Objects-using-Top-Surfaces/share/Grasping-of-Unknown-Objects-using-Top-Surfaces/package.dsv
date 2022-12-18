@@ -1,0 +1,8 @@
+source;share/Grasping-of-Unknown-Objects-using-Top-Surfaces/hook/cmake_prefix_path.ps1
+source;share/Grasping-of-Unknown-Objects-using-Top-Surfaces/hook/cmake_prefix_path.dsv
+source;share/Grasping-of-Unknown-Objects-using-Top-Surfaces/hook/cmake_prefix_path.sh
+source;share/Grasping-of-Unknown-Objects-using-Top-Surfaces/local_setup.bash
+source;share/Grasping-of-Unknown-Objects-using-Top-Surfaces/local_setup.dsv
+source;share/Grasping-of-Unknown-Objects-using-Top-Surfaces/local_setup.ps1
+source;share/Grasping-of-Unknown-Objects-using-Top-Surfaces/local_setup.sh
+source;share/Grasping-of-Unknown-Objects-using-Top-Surfaces/local_setup.zsh

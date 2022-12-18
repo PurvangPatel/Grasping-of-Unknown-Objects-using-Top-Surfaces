@@ -1,0 +1,5 @@
+[0mCMake Error: The current CMakeCache.txt directory /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/vbrm-dr/CMakeCache.txt is different than the directory /home/purvang/vbrm-dr/build/vbrm-dr where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+/bin/sh: 1: cd: can't cd to /home/purvang/vbrm-dr/build/vbrm-dr
+gmake[2]: *** [CMakeFiles/PointCloudProcessor.dir/build.make:307: CMakeFiles/PointCloudProcessor.dir/depend] Error 2
+gmake[1]: *** [CMakeFiles/Makefile2:136: CMakeFiles/PointCloudProcessor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

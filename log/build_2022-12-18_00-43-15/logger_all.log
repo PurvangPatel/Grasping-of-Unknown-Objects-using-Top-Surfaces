@@ -1,0 +1,104 @@
+[0.409s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.409s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=9, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fd547b2f1f0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fd547cf7fa0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fd547cf7fa0>>)
+[0.435s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.435s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.435s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.435s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.435s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.435s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.436s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.462s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.ament_cmake' and name 'Grasping-of-Unknown-Objects-using-Top-Surfaces'
+[0.462s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.462s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.462s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.462s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.462s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.498s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.498s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.503s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install
+[0.506s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 306 installed packages in /opt/ros/humble
+[0.509s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.605s] Level 5:colcon.colcon_core.verb:set package 'Grasping-of-Unknown-Objects-using-Top-Surfaces' build argument 'cmake_args' from command line to 'None'
+[0.605s] Level 5:colcon.colcon_core.verb:set package 'Grasping-of-Unknown-Objects-using-Top-Surfaces' build argument 'cmake_target' from command line to 'None'
+[0.605s] Level 5:colcon.colcon_core.verb:set package 'Grasping-of-Unknown-Objects-using-Top-Surfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.605s] Level 5:colcon.colcon_core.verb:set package 'Grasping-of-Unknown-Objects-using-Top-Surfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.605s] Level 5:colcon.colcon_core.verb:set package 'Grasping-of-Unknown-Objects-using-Top-Surfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'Grasping-of-Unknown-Objects-using-Top-Surfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'Grasping-of-Unknown-Objects-using-Top-Surfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'Grasping-of-Unknown-Objects-using-Top-Surfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.606s] Level 5:colcon.colcon_core.verb:set package 'Grasping-of-Unknown-Objects-using-Top-Surfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.606s] DEBUG:colcon.colcon_core.verb:Building package 'Grasping-of-Unknown-Objects-using-Top-Surfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces', 'merge_install': False, 'path': '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces', 'symlink_install': False, 'test_result_base': None}
+[0.607s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.612s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.613s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces' with build type 'ament_cmake'
+[0.613s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces'
+[0.617s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.618s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.618s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.633s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces -- -j9 -l9
+[24.425s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces -- -j9 -l9
+[24.450s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --install /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces
+[24.463s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(Grasping-of-Unknown-Objects-using-Top-Surfaces)
+[24.468s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --install /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/Grasping-of-Unknown-Objects-using-Top-Surfaces
+[24.476s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces' for CMake module files
+[24.477s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces' for CMake config files
+[24.477s] Level 1:colcon.colcon_core.shell:create_environment_hook('Grasping-of-Unknown-Objects-using-Top-Surfaces', 'cmake_prefix_path')
+[24.480s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/hook/cmake_prefix_path.ps1'
+[24.481s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/hook/cmake_prefix_path.dsv'
+[24.481s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/hook/cmake_prefix_path.sh'
+[24.482s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/lib'
+[24.483s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/bin'
+[24.483s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/lib/pkgconfig/Grasping-of-Unknown-Objects-using-Top-Surfaces.pc'
+[24.483s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/lib/python3.10/site-packages'
+[24.484s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/bin'
+[24.486s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/package.ps1'
+[24.488s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/package.dsv'
+[24.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/package.sh'
+[24.490s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/package.bash'
+[24.491s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/package.zsh'
+[24.492s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/colcon-core/packages/Grasping-of-Unknown-Objects-using-Top-Surfaces)
+[24.517s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(Grasping-of-Unknown-Objects-using-Top-Surfaces)
+[24.520s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces' for CMake module files
+[24.521s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces' for CMake config files
+[24.521s] Level 1:colcon.colcon_core.shell:create_environment_hook('Grasping-of-Unknown-Objects-using-Top-Surfaces', 'cmake_prefix_path')
+[24.523s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/hook/cmake_prefix_path.ps1'
+[24.524s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/hook/cmake_prefix_path.dsv'
+[24.524s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/hook/cmake_prefix_path.sh'
+[24.525s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/lib'
+[24.525s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/bin'
+[24.525s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/lib/pkgconfig/Grasping-of-Unknown-Objects-using-Top-Surfaces.pc'
+[24.525s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/lib/python3.10/site-packages'
+[24.526s] Level 1:colcon.colcon_core.environment:checking '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/bin'
+[24.528s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/package.ps1'
+[24.528s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/package.dsv'
+[24.529s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/package.sh'
+[24.530s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/package.bash'
+[24.530s] INFO:colcon.colcon_core.shell:Creating package script '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/Grasping-of-Unknown-Objects-using-Top-Surfaces/package.zsh'
+[24.531s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/Grasping-of-Unknown-Objects-using-Top-Surfaces/share/colcon-core/packages/Grasping-of-Unknown-Objects-using-Top-Surfaces)
+[24.531s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[24.532s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[24.532s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[24.532s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[24.539s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[24.539s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[24.540s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[24.558s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[24.561s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/local_setup.ps1'
+[24.562s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/_local_setup_util_ps1.py'
+[24.566s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/setup.ps1'
+[24.569s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/local_setup.sh'
+[24.570s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/_local_setup_util_sh.py'
+[24.571s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/setup.sh'
+[24.574s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/local_setup.bash'
+[24.575s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/setup.bash'
+[24.578s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/local_setup.zsh'
+[24.579s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/install/setup.zsh'

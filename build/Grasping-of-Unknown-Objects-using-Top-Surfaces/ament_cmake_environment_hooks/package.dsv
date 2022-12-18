@@ -1,0 +1,4 @@
+source;share/Grasping-of-Unknown-Objects-using-Top-Surfaces/local_setup.bash
+source;share/Grasping-of-Unknown-Objects-using-Top-Surfaces/local_setup.dsv
+source;share/Grasping-of-Unknown-Objects-using-Top-Surfaces/local_setup.sh
+source;share/Grasping-of-Unknown-Objects-using-Top-Surfaces/local_setup.zsh

@@ -1,0 +1,2 @@
+Invoking command in '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/vbrm-dr': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/vbrm-dr -- -j9 -l9
+Invoked command in '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/vbrm-dr' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/vbrm-dr -- -j9 -l9

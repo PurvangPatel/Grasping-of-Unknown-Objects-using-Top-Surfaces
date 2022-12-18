@@ -1,0 +1,7 @@
+[0.029s] Invoking command in '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/vbrm-dr': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/vbrm-dr -- -j9 -l9
+[0.082s] [0mCMake Error: The current CMakeCache.txt directory /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/vbrm-dr/CMakeCache.txt is different than the directory /home/purvang/vbrm-dr/build/vbrm-dr where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0.203s] /bin/sh: 1: cd: can't cd to /home/purvang/vbrm-dr/build/vbrm-dr
+[0.203s] gmake[2]: *** [CMakeFiles/PointCloudProcessor.dir/build.make:307: CMakeFiles/PointCloudProcessor.dir/depend] Error 2
+[0.203s] gmake[1]: *** [CMakeFiles/Makefile2:136: CMakeFiles/PointCloudProcessor.dir/all] Error 2
+[0.204s] gmake: *** [Makefile:146: all] Error 2
+[0.205s] Invoked command in '/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/vbrm-dr' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/build/vbrm-dr -- -j9 -l9
