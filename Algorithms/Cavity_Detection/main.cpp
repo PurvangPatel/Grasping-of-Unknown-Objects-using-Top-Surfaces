@@ -222,19 +222,19 @@ int main (int argc, char** argv)
   {
     //Input and output Paths are hard-coded now as we know the object geometry and the algorithm's outer and inner boundary
     //detection are known to us. 
-    std::string inputPath = "/home/kt/pcl/Cavity_Detection/Media/object.pcd";
-    std::string outputPathFiltered = "/home/kt/pcl/Cavity_Detection/Media/filtered.pcd";
-    std::string outputPathBoundary = "/home/kt/pcl/Cavity_Detection/Media/boundary.pcd";
-    std::string outputPathOuter = "/home/kt/pcl/Cavity_Detection/Media/outer.pcd";
-    std::string outputPathInner1 = "/home/kt/pcl/Cavity_Detection/Media/inner_1.pcd";
-    std::string outputPathInner2 = "/home/kt/pcl/Cavity_Detection/Media/inner_2.pcd";
-    std::string outputPathPotentialSegment1 = "/home/kt/pcl/Cavity_Detection/Media/potential_segment_1.pcd";
-    std::string outputPathPotentialSegment2 = "/home/kt/pcl/Cavity_Detection/potential_segment_2.pcd";
-    std::string outputPathPotentialSegment3 = "/home/kt/pcl/Cavity_Detection/potential_segment_3.pcd";
+    std::string inputPath = "/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/Algorithms/Cavity_Detection/Media/object.pcd";
+    std::string outputPathFiltered = "/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/Algorithms/Cavity_Detection/Media/filtered.pcd";
+    std::string outputPathBoundary = "/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/Algorithms/Cavity_Detection/Media/boundary.pcd";
+    std::string outputPathOuter = "/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/Algorithms/Cavity_Detection/Media/outer.pcd";
+    std::string outputPathInner1 = "/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/Algorithms/Cavity_Detection/Media/inner_1.pcd";
+    std::string outputPathInner2 = "/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/Algorithms/Cavity_Detection/Media/inner_2.pcd";
+    std::string outputPathPotentialSegment1 = "/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/Algorithms/Cavity_Detection/Media/potential_segment_1.pcd";
+    std::string outputPathPotentialSegment2 = "/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/Algorithms/Cavity_Detection/potential_segment_2.pcd";
+    std::string outputPathPotentialSegment3 = "/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/Algorithms/Cavity_Detection/potential_segment_3.pcd";
 
-    std::string outputPathGrasp1= "/home/kt/pcl/BoundaryEstimation/grasp_segment_1.pcd";
-    std::string outputPathGrasp2= "/home/kt/pcl/BoundaryEstimation/grasp_segment_2.pcd";
-    std::string outputPathGrasp3= "/home/kt/pcl/BoundaryEstimation/grasp_segment_3.pcd";
+    std::string outputPathGrasp1= "/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/Algorithms/BoundaryEstimation/grasp_segment_1.pcd";
+    std::string outputPathGrasp2= "/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/Algorithms/BoundaryEstimation/grasp_segment_2.pcd";
+    std::string outputPathGrasp3= "/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/Algorithms/BoundaryEstimation/grasp_segment_3.pcd";
 
     pcl::PCDReader reader;
     pcl::PCDWriter writer;

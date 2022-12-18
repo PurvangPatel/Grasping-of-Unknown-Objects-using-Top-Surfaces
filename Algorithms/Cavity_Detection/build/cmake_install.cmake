@@ -1,4 +1,4 @@
-# Install script for directory: /home/kt/mer_lab/src/vbrm-dr/Algorithms/Cavity_Detection
+# Install script for directory: /home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/Algorithms/Cavity_Detection
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/kt/mer_lab/src/vbrm-dr/Algorithms/Cavity_Detection/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/purvang/Grasping-of-Unknown-Objects-using-Top-Surfaces/Algorithms/Cavity_Detection/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
