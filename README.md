@@ -41,7 +41,11 @@ sudo apt-get install -y pcl-tools
 
 Clone the ROS2 package in your local folder. Make sure to source the setup.bash
 
-Open <workspace>/src/Grasping-of-Unknown-Objects-using-Top-Surfaces/src/main.cpp -> Change the line number 196 to /<workspace>/Grasping-of-Unknown-Objects-using-Top-Surfaces/Media/
+Open 
+
+"workspace"/src/Grasping-of-Unknown-Objects-using-Top-Surfaces/src/main.cpp -> Change the line number 196 to 
+
+"workspace"/src/Grasping-of-Unknown-Objects-using-Top-Surfaces/Media/
 
 Open a terminal and run:
 
@@ -70,7 +74,9 @@ Contains all the PCDs files including the point cloud data received from the sim
   
 To run the cavity detection algorithm approach - Perform the below minor read & write path change and follow the build instructions. 
 
-Change directory in line numbers 225-237 to: /<workspace>/Grasping-of-Unknown-Objects-using-Top-Surfaces/Algorithms/Cavity_Detection/Media/<filename>.pcd
+Change directory in line numbers 225-237 to: 
+
+"workspace"/Grasping-of-Unknown-Objects-using-Top-Surfaces/Algorithms/Cavity_Detection/Media/<filename>.pcd
 
 ```
 cd <workspace>/src/Grasping-of-Unknown-Objects-using-Top-Surfaces/Algorithms/Cavity_Detection
@@ -95,7 +101,7 @@ cmake ../
 ```
 make -j16 
 ```
-(note: -j<number of preferred core>)
+(note: -j"number of preferred core")
 
 **rviz2**
   
