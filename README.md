@@ -1,4 +1,4 @@
-# Directed Research - Fall B-term 2022 - Vision Based Robotic Manipulation 
+# Directed Research - Fall B-term 2022 - Vision-Based Robotic Manipulation 
 
 Project : GRASPING OF UNKNOWN OBJECTS USING TOP SURFACES FROM A TABLE TOP
               
@@ -7,14 +7,14 @@ Contributors: Ashwij Kumbla (akumbla@wpi.edu);
               Purvang Patel (pppatel@wpi.edu);
               Krutarth Ambarish Trivedi (ktrivedi@wpi.edu)
               
-Mentor/Advisor: Dr. Berk Calli(bcalli@wpi.edu)
+Mentor/Advisor: Dr. Berk Calli (bcalli@wpi.edu)
 
 # Requirements
-ROS2Humble
-Gazebo
-Rviz2
-pcl-dev
-pcl-tools
+- ROS2Humble
+- Gazebo
+- Rviz2
+- pcl-dev
+- pcl-tools
 
 # Instructions for Setting Project Environment
 
