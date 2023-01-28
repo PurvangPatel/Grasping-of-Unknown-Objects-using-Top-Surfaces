@@ -145,7 +145,6 @@ class PointCloudProcessing
       project.filter (*cloud_projected);
 
       return cloud_projected;
-
     }
 
     pcl::PointCloud<pcl::PointXYZRGB>::Ptr __BoundaryEstimation__(pcl::PointCloud<pcl::PointXYZRGB>::Ptr CloudPtr)const
