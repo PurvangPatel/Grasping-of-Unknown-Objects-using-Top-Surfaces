@@ -1,4 +1,4 @@
-# Directed Research - Fall B-term 2022 - Vision-Based Robotic Manipulation 
+# Directed Research - Fall 2022 - Vision-Based Robotic Manipulation 
 
 Project : GRASPING OF UNKNOWN OBJECTS USING TOP SURFACES FROM A TABLE TOP
               
